@@ -13,8 +13,8 @@ import org.apache.avro.message.SchemaStore;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class TaskDetailsEvent extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -3042225433062535391L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"TaskDetailsEvent\",\"namespace\":\"com.opentext.bn.converters.avro.entity\",\"fields\":[{\"name\":\"processId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"processingStages\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"ProcessingStages\",\"fields\":[{\"name\":\"stageDetails\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"ProcessingParam\",\"fields\":[{\"name\":\"key\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"value\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}]}}],\"default\":null},{\"name\":\"stageEndTimestamp\",\"type\":\"long\"},{\"name\":\"stageId\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"stageName\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"stageStartTimestamp\",\"type\":\"long\"},{\"name\":\"errorInfo\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"ErrorInfo\",\"fields\":[{\"name\":\"errorCode\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"externalErrorMessage\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"internalErrorMessage\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isPayloadRelated\",\"type\":\"boolean\"}]}],\"default\":null},{\"name\":\"contentId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null},{\"name\":\"taskId\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"tasksDetails\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"ProcessingParam\"}],\"default\":null},{\"name\":\"transactionId\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"payloadRef\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"PayloadRef\",\"fields\":[{\"name\":\"payloadId\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"payloadType\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}]}],\"default\":null}]}");
+  private static final long serialVersionUID = -2480082210780733843L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"TaskDetailsEvent\",\"namespace\":\"com.opentext.bn.converters.avro.entity\",\"fields\":[{\"name\":\"processId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"processingStages\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"ProcessingStages\",\"fields\":[{\"name\":\"stageDetails\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"ProcessingParam\",\"fields\":[{\"name\":\"key\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"value\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}]}}],\"default\":null},{\"name\":\"stageEndTimestamp\",\"type\":\"long\"},{\"name\":\"stageId\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"stageName\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"stageStartTimestamp\",\"type\":\"long\"},{\"name\":\"errorInfo\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"ErrorInfo\",\"fields\":[{\"name\":\"errorCode\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"externalErrorMessage\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"internalErrorMessage\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isPayloadRelated\",\"type\":\"boolean\"}]}],\"default\":null},{\"name\":\"contentId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null},{\"name\":\"taskId\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"tasksDetails\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"ProcessingParam\"}],\"default\":null},{\"name\":\"transactionId\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"payloadRef\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"PayloadRef\",\"fields\":[{\"name\":\"payloadId\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"payloadType\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}]}],\"default\":null},{\"name\":\"transactionCategory\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isCascadeTransactionCategory\",\"type\":[\"null\",\"boolean\"],\"default\":true}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
 
   private static SpecificData MODEL$ = new SpecificData();
@@ -57,6 +57,8 @@ public class TaskDetailsEvent extends org.apache.avro.specific.SpecificRecordBas
    private java.util.List<com.opentext.bn.converters.avro.entity.ProcessingParam> tasksDetails;
    private java.lang.String transactionId;
    private com.opentext.bn.converters.avro.entity.PayloadRef payloadRef;
+   private java.lang.String transactionCategory;
+   private java.lang.Boolean isCascadeTransactionCategory;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -73,14 +75,18 @@ public class TaskDetailsEvent extends org.apache.avro.specific.SpecificRecordBas
    * @param tasksDetails The new value for tasksDetails
    * @param transactionId The new value for transactionId
    * @param payloadRef The new value for payloadRef
+   * @param transactionCategory The new value for transactionCategory
+   * @param isCascadeTransactionCategory The new value for isCascadeTransactionCategory
    */
-  public TaskDetailsEvent(java.lang.String processId, java.util.List<com.opentext.bn.converters.avro.entity.ProcessingStages> processingStages, java.lang.String taskId, java.util.List<com.opentext.bn.converters.avro.entity.ProcessingParam> tasksDetails, java.lang.String transactionId, com.opentext.bn.converters.avro.entity.PayloadRef payloadRef) {
+  public TaskDetailsEvent(java.lang.String processId, java.util.List<com.opentext.bn.converters.avro.entity.ProcessingStages> processingStages, java.lang.String taskId, java.util.List<com.opentext.bn.converters.avro.entity.ProcessingParam> tasksDetails, java.lang.String transactionId, com.opentext.bn.converters.avro.entity.PayloadRef payloadRef, java.lang.String transactionCategory, java.lang.Boolean isCascadeTransactionCategory) {
     this.processId = processId;
     this.processingStages = processingStages;
     this.taskId = taskId;
     this.tasksDetails = tasksDetails;
     this.transactionId = transactionId;
     this.payloadRef = payloadRef;
+    this.transactionCategory = transactionCategory;
+    this.isCascadeTransactionCategory = isCascadeTransactionCategory;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -93,6 +99,8 @@ public class TaskDetailsEvent extends org.apache.avro.specific.SpecificRecordBas
     case 3: return tasksDetails;
     case 4: return transactionId;
     case 5: return payloadRef;
+    case 6: return transactionCategory;
+    case 7: return isCascadeTransactionCategory;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -107,6 +115,8 @@ public class TaskDetailsEvent extends org.apache.avro.specific.SpecificRecordBas
     case 3: tasksDetails = (java.util.List<com.opentext.bn.converters.avro.entity.ProcessingParam>)value$; break;
     case 4: transactionId = (java.lang.String)value$; break;
     case 5: payloadRef = (com.opentext.bn.converters.avro.entity.PayloadRef)value$; break;
+    case 6: transactionCategory = (java.lang.String)value$; break;
+    case 7: isCascadeTransactionCategory = (java.lang.Boolean)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -166,6 +176,24 @@ public class TaskDetailsEvent extends org.apache.avro.specific.SpecificRecordBas
 
 
   /**
+   * Gets the value of the 'transactionCategory' field.
+   * @return The value of the 'transactionCategory' field.
+   */
+  public java.lang.String getTransactionCategory() {
+    return transactionCategory;
+  }
+
+
+  /**
+   * Gets the value of the 'isCascadeTransactionCategory' field.
+   * @return The value of the 'isCascadeTransactionCategory' field.
+   */
+  public java.lang.Boolean getIsCascadeTransactionCategory() {
+    return isCascadeTransactionCategory;
+  }
+
+
+  /**
    * Creates a new TaskDetailsEvent RecordBuilder.
    * @return A new TaskDetailsEvent RecordBuilder
    */
@@ -204,6 +232,8 @@ public class TaskDetailsEvent extends org.apache.avro.specific.SpecificRecordBas
     private java.lang.String transactionId;
     private com.opentext.bn.converters.avro.entity.PayloadRef payloadRef;
     private com.opentext.bn.converters.avro.entity.PayloadRef.Builder payloadRefBuilder;
+    private java.lang.String transactionCategory;
+    private java.lang.Boolean isCascadeTransactionCategory;
 
     /** Creates a new Builder */
     private Builder() {
@@ -243,6 +273,14 @@ public class TaskDetailsEvent extends org.apache.avro.specific.SpecificRecordBas
       if (other.hasPayloadRefBuilder()) {
         this.payloadRefBuilder = com.opentext.bn.converters.avro.entity.PayloadRef.newBuilder(other.getPayloadRefBuilder());
       }
+      if (isValidValue(fields()[6], other.transactionCategory)) {
+        this.transactionCategory = data().deepCopy(fields()[6].schema(), other.transactionCategory);
+        fieldSetFlags()[6] = true;
+      }
+      if (isValidValue(fields()[7], other.isCascadeTransactionCategory)) {
+        this.isCascadeTransactionCategory = data().deepCopy(fields()[7].schema(), other.isCascadeTransactionCategory);
+        fieldSetFlags()[7] = true;
+      }
     }
 
     /**
@@ -276,6 +314,14 @@ public class TaskDetailsEvent extends org.apache.avro.specific.SpecificRecordBas
         fieldSetFlags()[5] = true;
       }
       this.payloadRefBuilder = null;
+      if (isValidValue(fields()[6], other.transactionCategory)) {
+        this.transactionCategory = data().deepCopy(fields()[6].schema(), other.transactionCategory);
+        fieldSetFlags()[6] = true;
+      }
+      if (isValidValue(fields()[7], other.isCascadeTransactionCategory)) {
+        this.isCascadeTransactionCategory = data().deepCopy(fields()[7].schema(), other.isCascadeTransactionCategory);
+        fieldSetFlags()[7] = true;
+      }
     }
 
     /**
@@ -547,6 +593,84 @@ public class TaskDetailsEvent extends org.apache.avro.specific.SpecificRecordBas
       return this;
     }
 
+    /**
+      * Gets the value of the 'transactionCategory' field.
+      * @return The value.
+      */
+    public java.lang.String getTransactionCategory() {
+      return transactionCategory;
+    }
+
+    /**
+      * Sets the value of the 'transactionCategory' field.
+      * @param value The value of 'transactionCategory'.
+      * @return This builder.
+      */
+    public com.opentext.bn.converters.avro.entity.TaskDetailsEvent.Builder setTransactionCategory(java.lang.String value) {
+      validate(fields()[6], value);
+      this.transactionCategory = value;
+      fieldSetFlags()[6] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'transactionCategory' field has been set.
+      * @return True if the 'transactionCategory' field has been set, false otherwise.
+      */
+    public boolean hasTransactionCategory() {
+      return fieldSetFlags()[6];
+    }
+
+
+    /**
+      * Clears the value of the 'transactionCategory' field.
+      * @return This builder.
+      */
+    public com.opentext.bn.converters.avro.entity.TaskDetailsEvent.Builder clearTransactionCategory() {
+      transactionCategory = null;
+      fieldSetFlags()[6] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'isCascadeTransactionCategory' field.
+      * @return The value.
+      */
+    public java.lang.Boolean getIsCascadeTransactionCategory() {
+      return isCascadeTransactionCategory;
+    }
+
+    /**
+      * Sets the value of the 'isCascadeTransactionCategory' field.
+      * @param value The value of 'isCascadeTransactionCategory'.
+      * @return This builder.
+      */
+    public com.opentext.bn.converters.avro.entity.TaskDetailsEvent.Builder setIsCascadeTransactionCategory(java.lang.Boolean value) {
+      validate(fields()[7], value);
+      this.isCascadeTransactionCategory = value;
+      fieldSetFlags()[7] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'isCascadeTransactionCategory' field has been set.
+      * @return True if the 'isCascadeTransactionCategory' field has been set, false otherwise.
+      */
+    public boolean hasIsCascadeTransactionCategory() {
+      return fieldSetFlags()[7];
+    }
+
+
+    /**
+      * Clears the value of the 'isCascadeTransactionCategory' field.
+      * @return This builder.
+      */
+    public com.opentext.bn.converters.avro.entity.TaskDetailsEvent.Builder clearIsCascadeTransactionCategory() {
+      isCascadeTransactionCategory = null;
+      fieldSetFlags()[7] = false;
+      return this;
+    }
+
     @Override
     @SuppressWarnings("unchecked")
     public TaskDetailsEvent build() {
@@ -562,6 +686,8 @@ public class TaskDetailsEvent extends org.apache.avro.specific.SpecificRecordBas
         } else {
           record.payloadRef = fieldSetFlags()[5] ? this.payloadRef : (com.opentext.bn.converters.avro.entity.PayloadRef) defaultValue(fields()[5]);
         }
+        record.transactionCategory = fieldSetFlags()[6] ? this.transactionCategory : (java.lang.String) defaultValue(fields()[6]);
+        record.isCascadeTransactionCategory = fieldSetFlags()[7] ? this.isCascadeTransactionCategory : (java.lang.Boolean) defaultValue(fields()[7]);
         return record;
       } catch (java.lang.Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
