@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AIRecognitionTranslationStatus
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="OTIntrospectInterface_v1_27.xsd">
+	<Host systemType="UNIX" name="lit-vaos-q016.qa.gxsonline.net" />
+	<Server cluster="lit" OT_QUEUEID="t1"
+		OT_DIR="/qual/qtoaita1/ai/Tranprod"
+		version="Version 5.2.4.168 otBuild: 02/04/19 at: 06:45:24  rev: a8fb32781a88" />
+	<Session number="00000ACR9" introspectList="MS"
+		dateTimeStart="2019-08-29T16:38:00Z"
+		dateTimeEnd="2019-08-29T16:38:00Z" translateMode="Both"
+		traceUseful="No" disposition="final" statusCode="1"
+		statusCodeDesc="processed" message="PS_OutAplFF.att"
+		bypass="PS_MsgByp.att" senderID="var_senderId" receiverID="var_receiverId"
+		aprf="var_aprf" serviceName="var_serviceName"
+		codePage="English_UnitedStates.Latin1@Binary" direction="Outbound" />
+	<CmdLineArgs>
+		<MESSAGE>PS_OutAplFF.att</MESSAGE>
+		<PREM>MADIRA</PREM>
+		<RECEIVERID>var_receiverId</RECEIVERID>
+		<DEBUG>Yes</DEBUG>
+		<ENCODING>Latin1</ENCODING>
+		<ISBYPASS>No</ISBYPASS>
+		<APRF>var_aprf</APRF>
+		<TRACE_LEVEL>1023</TRACE_LEVEL>
+		<SVC_NAME>var_serviceName</SVC_NAME>
+		<URI>dsmkey=var_dsmkey1&amp;nodeID=14&amp;dataStore=DSM</URI>
+		<SENDERID>var_senderId</SENDERID>
+		<ATTACHMENT>OTRecognPre.att</ATTACHMENT>
+		<LOG_LEVEL>TRACE</LOG_LEVEL>
+		<tgts_logInfo>f28a2dda-b445-4bd7-93a0-2176f87e2fc0</tgts_logInfo>
+		<BYPASS>PS_MsgByp.att</BYPASS>
+		<SERVICE_NAME>var_serviceName</SERVICE_NAME>
+		<XML_VALIDATE>No</XML_VALIDATE>
+		<TIMEOUTADDON>0</TIMEOUTADDON>
+		<TRANSLATION_MODE>Both</TRANSLATION_MODE>
+		<EXECUTION_MODE>NORMAL</EXECUTION_MODE>
+	</CmdLineArgs>
+	<ModelsUsed>
+		<File name="OTTrg.att" lastModDate="2019-02-04T06:48:46Z" />
+		<File name="PS_OutAplFF.att" lastModDate="2017-06-29T14:43:40Z" />
+		<File name="PS_OutAplFF.mdl" lastModDate="2017-06-29T14:43:40Z" />
+		<File name="STRBAo85041ANY.att"
+			lastModDate="2014-01-17T20:44:34Z" />
+		<File name="STRBAo85041ANYs.mdl"
+			lastModDate="2014-03-25T13:27:17Z" />
+		<File name="STRBAo85041ANYt.mdl"
+			lastModDate="2014-03-25T13:27:31Z" />
+	</ModelsUsed>
+	<Input>
+		<File uri="dsmkey=var_dsmkey1&amp;nodeID=14&amp;dataStore=DSM"
+			size="90879" />
+		<Standard type="Application" direction="Outbound" version=""
+			testIndicator="" translatable="Yes" status="Processed" sequence="1"
+			uuid="var_uuid1">
+			<PosStart>0</PosStart>
+			<PosEnd>90879</PosEnd>
+			<Date>20190829</Date>
+			<Time>163800</Time>
+			<Group status="Processed" sequence="1" uuid="var_uuid2">
+				<PosStart>1</PosStart>
+				<PosEnd>90879</PosEnd>
+				<Message type="var_aprf" version="" status="Processed"
+					translateMode="Both" sequence="1" uuid="var_uuid3">
+					<PosStart>1</PosStart>
+					<PosEnd>90879</PosEnd>
+					<Sender>
+						<ID>var_senderId</ID>
+						<Qual />
+					</Sender>
+					<Receiver>
+						<ID>var_receiverId</ID>
+						<Qual />
+					</Receiver>
+					<ProfileName $ SrvcName } The Climbing Den / ZZ:CLIMB /
+						Starbia / ZZ:STARBIA / X12 / The Climbing Den / CLIMB / Starbia /
+						SPORTSG / X12 / Purchase Order [1]</ProfileName>
+					<ControlNumber>var_controlNumber1</ControlNumber>
+					<OutputFile type="Communication">STARBIA.CLIMB.850_IDOC.00000ACR9</OutputFile>
+					<LabelValues>
+						<Set>
+							<Label key="primary">Purchase Order Number</Label>
+							<Value>4500005988</Value>
+						</Set>
+						<Set>
+							<Label key="secondary">IDOC Number</Label>
+							<Value>0000000015912034</Value>
+						</Set>
+						<Set>
+							<Label key="secondary">PO_DATE</Label>
+							<Value>20130509</Value>
+						</Set>
+					</LabelValues>
+				</Message>
+			</Group>
+		</Standard>
+	</Input>
+	<Output fileCount="1" sizeTotal="3380">
+		<Communication directory="comm">
+			<File name="STARBIA.CLIMB.850_IDOC.00000ACR9"
+				currentFileName="STARBIA.CLIMB.850_IDOC.00000ACR9"
+				uri="dsmkey=var_dsmkey2&amp;nodeID=14&amp;dataStore=DSM"
+				encoding="English_UnitedStates.Latin1@Binary" size="3380">
+				<IDs>
+					<Sender>
+						<ID>STARBIA</ID>
+						<Qual>ZZ</Qual>
+					</Sender>
+					<Receiver>
+						<ID>CLIMB</ID>
+						<Qual>ZZ</Qual>
+					</Receiver>
+					<ControlNumber>var_controlNumber2</ControlNumber>
+					<Standard>X12</Standard>
+					<MessageType>850</MessageType>
+					<PosStart>1</PosStart>
+					<PosEnd>3380</PosEnd>
+				</IDs>
+			</File>
+			<Input>
+				<File uri="dsmkey=var_dsmkey2&amp;nodeID=14&amp;dataStore=DSM"
+					size="90879" />
+				<Standard type="X12" direction="Outbound" version="00402"
+					testIndicator="Production" translatable="Yes" status="Processed"
+					sequence="1" uuid="var_uuid4">
+					<PosStart>1</PosStart>
+					<PosEnd>3380</PosEnd>
+					<Sender>
+						<ID>STARBIA</ID>
+						<Qual>ZZ</Qual>
+					</Sender>
+					<Receiver>
+						<ID>CLIMB</ID>
+						<Qual>ZZ</Qual>
+					</Receiver>
+					<ProfileName>STARBIA.COM.01/The Climbing
+						Den/ZZ:CLIMB/Starbia/ZZ:STARBIA/X12</ProfileName>
+					<Date>20190829</Date>
+					<Time>163800</Time>
+					<ControlNumber>var_controlNumber2</ControlNumber>
+					<Group status="Processed" sequence="1" uuid="var_uuid5">
+						<PosStart>107</PosStart>
+						<PosEnd>3364</PosEnd>
+						<Sender>
+							<ID>SPORTSG</ID>
+							<Qual />
+						</Sender>
+						<Receiver>
+							<ID>CLIMB</ID>
+							<Qual />
+						</Receiver>
+						<ProfileName>The Climbing Den/CLIMB/Starbia/SPORTSG/X12</ProfileName>
+						<ControlNumber>var_controlNumber3</ControlNumber>
+						<Message standard="X12" type="850" version="004010"
+							status="Processed" translateMode="Introspect" sequence="1"
+							uuid="var_uuid6">
+							<PosStart>154</PosStart>
+							<PosEnd>3355</PosEnd>
+							<ProfileName>Purchase Order [1]</ProfileName>
+							<ControlNumber>var_controlNumber4</ControlNumber>
+							<LabelValues>
+								<Set>
+									<Label key="primary">Purchase Order Number</Label>
+									<Value>4500005988</Value>
+								</Set>
+								<Set>
+									<Label key="secondary">Custom Field</Label>
+									<Value>DAYA APPAREL EXPORT (PVT) LTD</Value>
+								</Set>
+							</LabelValues>
+						</Message>
+						<LabelValues>
+							<Set>
+								<Label key="secondary">Function Code</Label>
+								<Value>PO</Value>
+							</Set>
+						</LabelValues>
+					</Group>
+				</Standard>
+			</Input>
+		</Communication>
+		<TraceLog directory="/qual/qtoaita1/logs">
+			<File name="t1.tr00000ACR9.log"
+				currentFileName="t1.tr00000ACR9.log"
+				uri="dsmkey=var_dsmkey3&#38;nodeID=14&#38;dataStore=DSM"
+				encoding="English_UnitedStates.Latin1@Binary" type="log"
+				solutionID="STARBIA.COM.01" sender="STRBA_FTPVPN"
+				receiver="STRBAGXS" aprf="var_aprf" />
+		</TraceLog>
+	</Output>
+</AIRecognitionTranslationStatus>

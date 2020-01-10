@@ -13,8 +13,8 @@ import org.apache.avro.message.SchemaStore;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class FileIntrospectedEvent extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -3798545881187375444L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"FileIntrospectedEvent\",\"namespace\":\"com.opentext.bn.converters.avro.entity\",\"fields\":[{\"name\":\"processId\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"eventTimestamp\",\"type\":\"long\"},{\"name\":\"eventId\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"transactionId\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"taskId\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"xifInfo\",\"type\":{\"type\":\"record\",\"name\":\"PayloadRef\",\"fields\":[{\"name\":\"payloadId\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"payloadType\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}]}},{\"name\":\"assets\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Asset\",\"fields\":[{\"name\":\"assetId\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"assetName\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"assetType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"assetDescription\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"xifInfo\",\"type\":\"PayloadRef\"}]}}],\"default\":null},{\"name\":\"appFileCount\",\"type\":\"int\"},{\"name\":\"bypassFileCount\",\"type\":\"int\"},{\"name\":\"comFileCount\",\"type\":\"int\"},{\"name\":\"errorCount\",\"type\":\"int\"},{\"name\":\"inputEdiDocumentCount\",\"type\":\"int\"},{\"name\":\"inputEdiFileCount\",\"type\":\"int\"},{\"name\":\"inputInterchangeCount\",\"type\":\"int\"},{\"name\":\"inputUdfDocumentCount\",\"type\":\"int\"},{\"name\":\"inputUdfFileCount\",\"type\":\"int\"},{\"name\":\"introspectionSessionNumber\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"introspectionSource\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"outputEdiDocumentCount\",\"type\":\"int\"},{\"name\":\"outputEdiFileCount\",\"type\":\"int\"},{\"name\":\"outputInterchangeCount\",\"type\":\"int\"},{\"name\":\"outputUdfDocumentCount\",\"type\":\"int\"},{\"name\":\"outputUdfFileCount\",\"type\":\"int\"},{\"name\":\"rejectedFileCount\",\"type\":\"int\"}]}");
+  private static final long serialVersionUID = -3293036548565193293L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"FileIntrospectedEvent\",\"namespace\":\"com.opentext.bn.converters.avro.entity\",\"fields\":[{\"name\":\"processId\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"eventTimestamp\",\"type\":\"long\"},{\"name\":\"eventId\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"transactionId\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"taskId\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"assets\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Asset\",\"fields\":[{\"name\":\"assetId\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"assetName\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"assetType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"assetDescription\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"xifInfo\",\"type\":{\"type\":\"record\",\"name\":\"PayloadRef\",\"fields\":[{\"name\":\"payloadId\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"payloadType\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}]}}]}}],\"default\":null},{\"name\":\"appFileCount\",\"type\":\"int\"},{\"name\":\"bypassFileCount\",\"type\":\"int\"},{\"name\":\"comFileCount\",\"type\":\"int\"},{\"name\":\"errorCount\",\"type\":\"int\"},{\"name\":\"inputEdiDocumentCount\",\"type\":\"int\"},{\"name\":\"inputEdiFileCount\",\"type\":\"int\"},{\"name\":\"inputInterchangeCount\",\"type\":\"int\"},{\"name\":\"inputUdfDocumentCount\",\"type\":\"int\"},{\"name\":\"inputUdfFileCount\",\"type\":\"int\"},{\"name\":\"introspectionSessionNumber\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"introspectionSource\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"outputEdiDocumentCount\",\"type\":\"int\"},{\"name\":\"outputEdiFileCount\",\"type\":\"int\"},{\"name\":\"outputInterchangeCount\",\"type\":\"int\"},{\"name\":\"outputUdfDocumentCount\",\"type\":\"int\"},{\"name\":\"outputUdfFileCount\",\"type\":\"int\"},{\"name\":\"rejectedFileCount\",\"type\":\"int\"},{\"name\":\"xifInfo\",\"type\":\"PayloadRef\"}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
 
   private static SpecificData MODEL$ = new SpecificData();
@@ -56,7 +56,6 @@ public class FileIntrospectedEvent extends org.apache.avro.specific.SpecificReco
    private java.lang.String eventId;
    private java.lang.String transactionId;
    private java.lang.String taskId;
-   private com.opentext.bn.converters.avro.entity.PayloadRef xifInfo;
    private java.util.List<com.opentext.bn.converters.avro.entity.Asset> assets;
    private int appFileCount;
    private int bypassFileCount;
@@ -75,6 +74,7 @@ public class FileIntrospectedEvent extends org.apache.avro.specific.SpecificReco
    private int outputUdfDocumentCount;
    private int outputUdfFileCount;
    private int rejectedFileCount;
+   private com.opentext.bn.converters.avro.entity.PayloadRef xifInfo;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -90,7 +90,6 @@ public class FileIntrospectedEvent extends org.apache.avro.specific.SpecificReco
    * @param eventId The new value for eventId
    * @param transactionId The new value for transactionId
    * @param taskId The new value for taskId
-   * @param xifInfo The new value for xifInfo
    * @param assets The new value for assets
    * @param appFileCount The new value for appFileCount
    * @param bypassFileCount The new value for bypassFileCount
@@ -109,14 +108,14 @@ public class FileIntrospectedEvent extends org.apache.avro.specific.SpecificReco
    * @param outputUdfDocumentCount The new value for outputUdfDocumentCount
    * @param outputUdfFileCount The new value for outputUdfFileCount
    * @param rejectedFileCount The new value for rejectedFileCount
+   * @param xifInfo The new value for xifInfo
    */
-  public FileIntrospectedEvent(java.lang.String processId, java.lang.Long eventTimestamp, java.lang.String eventId, java.lang.String transactionId, java.lang.String taskId, com.opentext.bn.converters.avro.entity.PayloadRef xifInfo, java.util.List<com.opentext.bn.converters.avro.entity.Asset> assets, java.lang.Integer appFileCount, java.lang.Integer bypassFileCount, java.lang.Integer comFileCount, java.lang.Integer errorCount, java.lang.Integer inputEdiDocumentCount, java.lang.Integer inputEdiFileCount, java.lang.Integer inputInterchangeCount, java.lang.Integer inputUdfDocumentCount, java.lang.Integer inputUdfFileCount, java.lang.String introspectionSessionNumber, java.lang.String introspectionSource, java.lang.Integer outputEdiDocumentCount, java.lang.Integer outputEdiFileCount, java.lang.Integer outputInterchangeCount, java.lang.Integer outputUdfDocumentCount, java.lang.Integer outputUdfFileCount, java.lang.Integer rejectedFileCount) {
+  public FileIntrospectedEvent(java.lang.String processId, java.lang.Long eventTimestamp, java.lang.String eventId, java.lang.String transactionId, java.lang.String taskId, java.util.List<com.opentext.bn.converters.avro.entity.Asset> assets, java.lang.Integer appFileCount, java.lang.Integer bypassFileCount, java.lang.Integer comFileCount, java.lang.Integer errorCount, java.lang.Integer inputEdiDocumentCount, java.lang.Integer inputEdiFileCount, java.lang.Integer inputInterchangeCount, java.lang.Integer inputUdfDocumentCount, java.lang.Integer inputUdfFileCount, java.lang.String introspectionSessionNumber, java.lang.String introspectionSource, java.lang.Integer outputEdiDocumentCount, java.lang.Integer outputEdiFileCount, java.lang.Integer outputInterchangeCount, java.lang.Integer outputUdfDocumentCount, java.lang.Integer outputUdfFileCount, java.lang.Integer rejectedFileCount, com.opentext.bn.converters.avro.entity.PayloadRef xifInfo) {
     this.processId = processId;
     this.eventTimestamp = eventTimestamp;
     this.eventId = eventId;
     this.transactionId = transactionId;
     this.taskId = taskId;
-    this.xifInfo = xifInfo;
     this.assets = assets;
     this.appFileCount = appFileCount;
     this.bypassFileCount = bypassFileCount;
@@ -135,6 +134,7 @@ public class FileIntrospectedEvent extends org.apache.avro.specific.SpecificReco
     this.outputUdfDocumentCount = outputUdfDocumentCount;
     this.outputUdfFileCount = outputUdfFileCount;
     this.rejectedFileCount = rejectedFileCount;
+    this.xifInfo = xifInfo;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -146,25 +146,25 @@ public class FileIntrospectedEvent extends org.apache.avro.specific.SpecificReco
     case 2: return eventId;
     case 3: return transactionId;
     case 4: return taskId;
-    case 5: return xifInfo;
-    case 6: return assets;
-    case 7: return appFileCount;
-    case 8: return bypassFileCount;
-    case 9: return comFileCount;
-    case 10: return errorCount;
-    case 11: return inputEdiDocumentCount;
-    case 12: return inputEdiFileCount;
-    case 13: return inputInterchangeCount;
-    case 14: return inputUdfDocumentCount;
-    case 15: return inputUdfFileCount;
-    case 16: return introspectionSessionNumber;
-    case 17: return introspectionSource;
-    case 18: return outputEdiDocumentCount;
-    case 19: return outputEdiFileCount;
-    case 20: return outputInterchangeCount;
-    case 21: return outputUdfDocumentCount;
-    case 22: return outputUdfFileCount;
-    case 23: return rejectedFileCount;
+    case 5: return assets;
+    case 6: return appFileCount;
+    case 7: return bypassFileCount;
+    case 8: return comFileCount;
+    case 9: return errorCount;
+    case 10: return inputEdiDocumentCount;
+    case 11: return inputEdiFileCount;
+    case 12: return inputInterchangeCount;
+    case 13: return inputUdfDocumentCount;
+    case 14: return inputUdfFileCount;
+    case 15: return introspectionSessionNumber;
+    case 16: return introspectionSource;
+    case 17: return outputEdiDocumentCount;
+    case 18: return outputEdiFileCount;
+    case 19: return outputInterchangeCount;
+    case 20: return outputUdfDocumentCount;
+    case 21: return outputUdfFileCount;
+    case 22: return rejectedFileCount;
+    case 23: return xifInfo;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -178,25 +178,25 @@ public class FileIntrospectedEvent extends org.apache.avro.specific.SpecificReco
     case 2: eventId = (java.lang.String)value$; break;
     case 3: transactionId = (java.lang.String)value$; break;
     case 4: taskId = (java.lang.String)value$; break;
-    case 5: xifInfo = (com.opentext.bn.converters.avro.entity.PayloadRef)value$; break;
-    case 6: assets = (java.util.List<com.opentext.bn.converters.avro.entity.Asset>)value$; break;
-    case 7: appFileCount = (java.lang.Integer)value$; break;
-    case 8: bypassFileCount = (java.lang.Integer)value$; break;
-    case 9: comFileCount = (java.lang.Integer)value$; break;
-    case 10: errorCount = (java.lang.Integer)value$; break;
-    case 11: inputEdiDocumentCount = (java.lang.Integer)value$; break;
-    case 12: inputEdiFileCount = (java.lang.Integer)value$; break;
-    case 13: inputInterchangeCount = (java.lang.Integer)value$; break;
-    case 14: inputUdfDocumentCount = (java.lang.Integer)value$; break;
-    case 15: inputUdfFileCount = (java.lang.Integer)value$; break;
-    case 16: introspectionSessionNumber = (java.lang.String)value$; break;
-    case 17: introspectionSource = (java.lang.String)value$; break;
-    case 18: outputEdiDocumentCount = (java.lang.Integer)value$; break;
-    case 19: outputEdiFileCount = (java.lang.Integer)value$; break;
-    case 20: outputInterchangeCount = (java.lang.Integer)value$; break;
-    case 21: outputUdfDocumentCount = (java.lang.Integer)value$; break;
-    case 22: outputUdfFileCount = (java.lang.Integer)value$; break;
-    case 23: rejectedFileCount = (java.lang.Integer)value$; break;
+    case 5: assets = (java.util.List<com.opentext.bn.converters.avro.entity.Asset>)value$; break;
+    case 6: appFileCount = (java.lang.Integer)value$; break;
+    case 7: bypassFileCount = (java.lang.Integer)value$; break;
+    case 8: comFileCount = (java.lang.Integer)value$; break;
+    case 9: errorCount = (java.lang.Integer)value$; break;
+    case 10: inputEdiDocumentCount = (java.lang.Integer)value$; break;
+    case 11: inputEdiFileCount = (java.lang.Integer)value$; break;
+    case 12: inputInterchangeCount = (java.lang.Integer)value$; break;
+    case 13: inputUdfDocumentCount = (java.lang.Integer)value$; break;
+    case 14: inputUdfFileCount = (java.lang.Integer)value$; break;
+    case 15: introspectionSessionNumber = (java.lang.String)value$; break;
+    case 16: introspectionSource = (java.lang.String)value$; break;
+    case 17: outputEdiDocumentCount = (java.lang.Integer)value$; break;
+    case 18: outputEdiFileCount = (java.lang.Integer)value$; break;
+    case 19: outputInterchangeCount = (java.lang.Integer)value$; break;
+    case 20: outputUdfDocumentCount = (java.lang.Integer)value$; break;
+    case 21: outputUdfFileCount = (java.lang.Integer)value$; break;
+    case 22: rejectedFileCount = (java.lang.Integer)value$; break;
+    case 23: xifInfo = (com.opentext.bn.converters.avro.entity.PayloadRef)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -243,15 +243,6 @@ public class FileIntrospectedEvent extends org.apache.avro.specific.SpecificReco
    */
   public java.lang.String getTaskId() {
     return taskId;
-  }
-
-
-  /**
-   * Gets the value of the 'xifInfo' field.
-   * @return The value of the 'xifInfo' field.
-   */
-  public com.opentext.bn.converters.avro.entity.PayloadRef getXifInfo() {
-    return xifInfo;
   }
 
 
@@ -418,6 +409,15 @@ public class FileIntrospectedEvent extends org.apache.avro.specific.SpecificReco
 
 
   /**
+   * Gets the value of the 'xifInfo' field.
+   * @return The value of the 'xifInfo' field.
+   */
+  public com.opentext.bn.converters.avro.entity.PayloadRef getXifInfo() {
+    return xifInfo;
+  }
+
+
+  /**
    * Creates a new FileIntrospectedEvent RecordBuilder.
    * @return A new FileIntrospectedEvent RecordBuilder
    */
@@ -454,8 +454,6 @@ public class FileIntrospectedEvent extends org.apache.avro.specific.SpecificReco
     private java.lang.String eventId;
     private java.lang.String transactionId;
     private java.lang.String taskId;
-    private com.opentext.bn.converters.avro.entity.PayloadRef xifInfo;
-    private com.opentext.bn.converters.avro.entity.PayloadRef.Builder xifInfoBuilder;
     private java.util.List<com.opentext.bn.converters.avro.entity.Asset> assets;
     private int appFileCount;
     private int bypassFileCount;
@@ -474,6 +472,8 @@ public class FileIntrospectedEvent extends org.apache.avro.specific.SpecificReco
     private int outputUdfDocumentCount;
     private int outputUdfFileCount;
     private int rejectedFileCount;
+    private com.opentext.bn.converters.avro.entity.PayloadRef xifInfo;
+    private com.opentext.bn.converters.avro.entity.PayloadRef.Builder xifInfoBuilder;
 
     /** Creates a new Builder */
     private Builder() {
@@ -506,84 +506,84 @@ public class FileIntrospectedEvent extends org.apache.avro.specific.SpecificReco
         this.taskId = data().deepCopy(fields()[4].schema(), other.taskId);
         fieldSetFlags()[4] = true;
       }
-      if (isValidValue(fields()[5], other.xifInfo)) {
-        this.xifInfo = data().deepCopy(fields()[5].schema(), other.xifInfo);
+      if (isValidValue(fields()[5], other.assets)) {
+        this.assets = data().deepCopy(fields()[5].schema(), other.assets);
         fieldSetFlags()[5] = true;
+      }
+      if (isValidValue(fields()[6], other.appFileCount)) {
+        this.appFileCount = data().deepCopy(fields()[6].schema(), other.appFileCount);
+        fieldSetFlags()[6] = true;
+      }
+      if (isValidValue(fields()[7], other.bypassFileCount)) {
+        this.bypassFileCount = data().deepCopy(fields()[7].schema(), other.bypassFileCount);
+        fieldSetFlags()[7] = true;
+      }
+      if (isValidValue(fields()[8], other.comFileCount)) {
+        this.comFileCount = data().deepCopy(fields()[8].schema(), other.comFileCount);
+        fieldSetFlags()[8] = true;
+      }
+      if (isValidValue(fields()[9], other.errorCount)) {
+        this.errorCount = data().deepCopy(fields()[9].schema(), other.errorCount);
+        fieldSetFlags()[9] = true;
+      }
+      if (isValidValue(fields()[10], other.inputEdiDocumentCount)) {
+        this.inputEdiDocumentCount = data().deepCopy(fields()[10].schema(), other.inputEdiDocumentCount);
+        fieldSetFlags()[10] = true;
+      }
+      if (isValidValue(fields()[11], other.inputEdiFileCount)) {
+        this.inputEdiFileCount = data().deepCopy(fields()[11].schema(), other.inputEdiFileCount);
+        fieldSetFlags()[11] = true;
+      }
+      if (isValidValue(fields()[12], other.inputInterchangeCount)) {
+        this.inputInterchangeCount = data().deepCopy(fields()[12].schema(), other.inputInterchangeCount);
+        fieldSetFlags()[12] = true;
+      }
+      if (isValidValue(fields()[13], other.inputUdfDocumentCount)) {
+        this.inputUdfDocumentCount = data().deepCopy(fields()[13].schema(), other.inputUdfDocumentCount);
+        fieldSetFlags()[13] = true;
+      }
+      if (isValidValue(fields()[14], other.inputUdfFileCount)) {
+        this.inputUdfFileCount = data().deepCopy(fields()[14].schema(), other.inputUdfFileCount);
+        fieldSetFlags()[14] = true;
+      }
+      if (isValidValue(fields()[15], other.introspectionSessionNumber)) {
+        this.introspectionSessionNumber = data().deepCopy(fields()[15].schema(), other.introspectionSessionNumber);
+        fieldSetFlags()[15] = true;
+      }
+      if (isValidValue(fields()[16], other.introspectionSource)) {
+        this.introspectionSource = data().deepCopy(fields()[16].schema(), other.introspectionSource);
+        fieldSetFlags()[16] = true;
+      }
+      if (isValidValue(fields()[17], other.outputEdiDocumentCount)) {
+        this.outputEdiDocumentCount = data().deepCopy(fields()[17].schema(), other.outputEdiDocumentCount);
+        fieldSetFlags()[17] = true;
+      }
+      if (isValidValue(fields()[18], other.outputEdiFileCount)) {
+        this.outputEdiFileCount = data().deepCopy(fields()[18].schema(), other.outputEdiFileCount);
+        fieldSetFlags()[18] = true;
+      }
+      if (isValidValue(fields()[19], other.outputInterchangeCount)) {
+        this.outputInterchangeCount = data().deepCopy(fields()[19].schema(), other.outputInterchangeCount);
+        fieldSetFlags()[19] = true;
+      }
+      if (isValidValue(fields()[20], other.outputUdfDocumentCount)) {
+        this.outputUdfDocumentCount = data().deepCopy(fields()[20].schema(), other.outputUdfDocumentCount);
+        fieldSetFlags()[20] = true;
+      }
+      if (isValidValue(fields()[21], other.outputUdfFileCount)) {
+        this.outputUdfFileCount = data().deepCopy(fields()[21].schema(), other.outputUdfFileCount);
+        fieldSetFlags()[21] = true;
+      }
+      if (isValidValue(fields()[22], other.rejectedFileCount)) {
+        this.rejectedFileCount = data().deepCopy(fields()[22].schema(), other.rejectedFileCount);
+        fieldSetFlags()[22] = true;
+      }
+      if (isValidValue(fields()[23], other.xifInfo)) {
+        this.xifInfo = data().deepCopy(fields()[23].schema(), other.xifInfo);
+        fieldSetFlags()[23] = true;
       }
       if (other.hasXifInfoBuilder()) {
         this.xifInfoBuilder = com.opentext.bn.converters.avro.entity.PayloadRef.newBuilder(other.getXifInfoBuilder());
-      }
-      if (isValidValue(fields()[6], other.assets)) {
-        this.assets = data().deepCopy(fields()[6].schema(), other.assets);
-        fieldSetFlags()[6] = true;
-      }
-      if (isValidValue(fields()[7], other.appFileCount)) {
-        this.appFileCount = data().deepCopy(fields()[7].schema(), other.appFileCount);
-        fieldSetFlags()[7] = true;
-      }
-      if (isValidValue(fields()[8], other.bypassFileCount)) {
-        this.bypassFileCount = data().deepCopy(fields()[8].schema(), other.bypassFileCount);
-        fieldSetFlags()[8] = true;
-      }
-      if (isValidValue(fields()[9], other.comFileCount)) {
-        this.comFileCount = data().deepCopy(fields()[9].schema(), other.comFileCount);
-        fieldSetFlags()[9] = true;
-      }
-      if (isValidValue(fields()[10], other.errorCount)) {
-        this.errorCount = data().deepCopy(fields()[10].schema(), other.errorCount);
-        fieldSetFlags()[10] = true;
-      }
-      if (isValidValue(fields()[11], other.inputEdiDocumentCount)) {
-        this.inputEdiDocumentCount = data().deepCopy(fields()[11].schema(), other.inputEdiDocumentCount);
-        fieldSetFlags()[11] = true;
-      }
-      if (isValidValue(fields()[12], other.inputEdiFileCount)) {
-        this.inputEdiFileCount = data().deepCopy(fields()[12].schema(), other.inputEdiFileCount);
-        fieldSetFlags()[12] = true;
-      }
-      if (isValidValue(fields()[13], other.inputInterchangeCount)) {
-        this.inputInterchangeCount = data().deepCopy(fields()[13].schema(), other.inputInterchangeCount);
-        fieldSetFlags()[13] = true;
-      }
-      if (isValidValue(fields()[14], other.inputUdfDocumentCount)) {
-        this.inputUdfDocumentCount = data().deepCopy(fields()[14].schema(), other.inputUdfDocumentCount);
-        fieldSetFlags()[14] = true;
-      }
-      if (isValidValue(fields()[15], other.inputUdfFileCount)) {
-        this.inputUdfFileCount = data().deepCopy(fields()[15].schema(), other.inputUdfFileCount);
-        fieldSetFlags()[15] = true;
-      }
-      if (isValidValue(fields()[16], other.introspectionSessionNumber)) {
-        this.introspectionSessionNumber = data().deepCopy(fields()[16].schema(), other.introspectionSessionNumber);
-        fieldSetFlags()[16] = true;
-      }
-      if (isValidValue(fields()[17], other.introspectionSource)) {
-        this.introspectionSource = data().deepCopy(fields()[17].schema(), other.introspectionSource);
-        fieldSetFlags()[17] = true;
-      }
-      if (isValidValue(fields()[18], other.outputEdiDocumentCount)) {
-        this.outputEdiDocumentCount = data().deepCopy(fields()[18].schema(), other.outputEdiDocumentCount);
-        fieldSetFlags()[18] = true;
-      }
-      if (isValidValue(fields()[19], other.outputEdiFileCount)) {
-        this.outputEdiFileCount = data().deepCopy(fields()[19].schema(), other.outputEdiFileCount);
-        fieldSetFlags()[19] = true;
-      }
-      if (isValidValue(fields()[20], other.outputInterchangeCount)) {
-        this.outputInterchangeCount = data().deepCopy(fields()[20].schema(), other.outputInterchangeCount);
-        fieldSetFlags()[20] = true;
-      }
-      if (isValidValue(fields()[21], other.outputUdfDocumentCount)) {
-        this.outputUdfDocumentCount = data().deepCopy(fields()[21].schema(), other.outputUdfDocumentCount);
-        fieldSetFlags()[21] = true;
-      }
-      if (isValidValue(fields()[22], other.outputUdfFileCount)) {
-        this.outputUdfFileCount = data().deepCopy(fields()[22].schema(), other.outputUdfFileCount);
-        fieldSetFlags()[22] = true;
-      }
-      if (isValidValue(fields()[23], other.rejectedFileCount)) {
-        this.rejectedFileCount = data().deepCopy(fields()[23].schema(), other.rejectedFileCount);
-        fieldSetFlags()[23] = true;
       }
     }
 
@@ -613,83 +613,83 @@ public class FileIntrospectedEvent extends org.apache.avro.specific.SpecificReco
         this.taskId = data().deepCopy(fields()[4].schema(), other.taskId);
         fieldSetFlags()[4] = true;
       }
-      if (isValidValue(fields()[5], other.xifInfo)) {
-        this.xifInfo = data().deepCopy(fields()[5].schema(), other.xifInfo);
+      if (isValidValue(fields()[5], other.assets)) {
+        this.assets = data().deepCopy(fields()[5].schema(), other.assets);
         fieldSetFlags()[5] = true;
       }
-      this.xifInfoBuilder = null;
-      if (isValidValue(fields()[6], other.assets)) {
-        this.assets = data().deepCopy(fields()[6].schema(), other.assets);
+      if (isValidValue(fields()[6], other.appFileCount)) {
+        this.appFileCount = data().deepCopy(fields()[6].schema(), other.appFileCount);
         fieldSetFlags()[6] = true;
       }
-      if (isValidValue(fields()[7], other.appFileCount)) {
-        this.appFileCount = data().deepCopy(fields()[7].schema(), other.appFileCount);
+      if (isValidValue(fields()[7], other.bypassFileCount)) {
+        this.bypassFileCount = data().deepCopy(fields()[7].schema(), other.bypassFileCount);
         fieldSetFlags()[7] = true;
       }
-      if (isValidValue(fields()[8], other.bypassFileCount)) {
-        this.bypassFileCount = data().deepCopy(fields()[8].schema(), other.bypassFileCount);
+      if (isValidValue(fields()[8], other.comFileCount)) {
+        this.comFileCount = data().deepCopy(fields()[8].schema(), other.comFileCount);
         fieldSetFlags()[8] = true;
       }
-      if (isValidValue(fields()[9], other.comFileCount)) {
-        this.comFileCount = data().deepCopy(fields()[9].schema(), other.comFileCount);
+      if (isValidValue(fields()[9], other.errorCount)) {
+        this.errorCount = data().deepCopy(fields()[9].schema(), other.errorCount);
         fieldSetFlags()[9] = true;
       }
-      if (isValidValue(fields()[10], other.errorCount)) {
-        this.errorCount = data().deepCopy(fields()[10].schema(), other.errorCount);
+      if (isValidValue(fields()[10], other.inputEdiDocumentCount)) {
+        this.inputEdiDocumentCount = data().deepCopy(fields()[10].schema(), other.inputEdiDocumentCount);
         fieldSetFlags()[10] = true;
       }
-      if (isValidValue(fields()[11], other.inputEdiDocumentCount)) {
-        this.inputEdiDocumentCount = data().deepCopy(fields()[11].schema(), other.inputEdiDocumentCount);
+      if (isValidValue(fields()[11], other.inputEdiFileCount)) {
+        this.inputEdiFileCount = data().deepCopy(fields()[11].schema(), other.inputEdiFileCount);
         fieldSetFlags()[11] = true;
       }
-      if (isValidValue(fields()[12], other.inputEdiFileCount)) {
-        this.inputEdiFileCount = data().deepCopy(fields()[12].schema(), other.inputEdiFileCount);
+      if (isValidValue(fields()[12], other.inputInterchangeCount)) {
+        this.inputInterchangeCount = data().deepCopy(fields()[12].schema(), other.inputInterchangeCount);
         fieldSetFlags()[12] = true;
       }
-      if (isValidValue(fields()[13], other.inputInterchangeCount)) {
-        this.inputInterchangeCount = data().deepCopy(fields()[13].schema(), other.inputInterchangeCount);
+      if (isValidValue(fields()[13], other.inputUdfDocumentCount)) {
+        this.inputUdfDocumentCount = data().deepCopy(fields()[13].schema(), other.inputUdfDocumentCount);
         fieldSetFlags()[13] = true;
       }
-      if (isValidValue(fields()[14], other.inputUdfDocumentCount)) {
-        this.inputUdfDocumentCount = data().deepCopy(fields()[14].schema(), other.inputUdfDocumentCount);
+      if (isValidValue(fields()[14], other.inputUdfFileCount)) {
+        this.inputUdfFileCount = data().deepCopy(fields()[14].schema(), other.inputUdfFileCount);
         fieldSetFlags()[14] = true;
       }
-      if (isValidValue(fields()[15], other.inputUdfFileCount)) {
-        this.inputUdfFileCount = data().deepCopy(fields()[15].schema(), other.inputUdfFileCount);
+      if (isValidValue(fields()[15], other.introspectionSessionNumber)) {
+        this.introspectionSessionNumber = data().deepCopy(fields()[15].schema(), other.introspectionSessionNumber);
         fieldSetFlags()[15] = true;
       }
-      if (isValidValue(fields()[16], other.introspectionSessionNumber)) {
-        this.introspectionSessionNumber = data().deepCopy(fields()[16].schema(), other.introspectionSessionNumber);
+      if (isValidValue(fields()[16], other.introspectionSource)) {
+        this.introspectionSource = data().deepCopy(fields()[16].schema(), other.introspectionSource);
         fieldSetFlags()[16] = true;
       }
-      if (isValidValue(fields()[17], other.introspectionSource)) {
-        this.introspectionSource = data().deepCopy(fields()[17].schema(), other.introspectionSource);
+      if (isValidValue(fields()[17], other.outputEdiDocumentCount)) {
+        this.outputEdiDocumentCount = data().deepCopy(fields()[17].schema(), other.outputEdiDocumentCount);
         fieldSetFlags()[17] = true;
       }
-      if (isValidValue(fields()[18], other.outputEdiDocumentCount)) {
-        this.outputEdiDocumentCount = data().deepCopy(fields()[18].schema(), other.outputEdiDocumentCount);
+      if (isValidValue(fields()[18], other.outputEdiFileCount)) {
+        this.outputEdiFileCount = data().deepCopy(fields()[18].schema(), other.outputEdiFileCount);
         fieldSetFlags()[18] = true;
       }
-      if (isValidValue(fields()[19], other.outputEdiFileCount)) {
-        this.outputEdiFileCount = data().deepCopy(fields()[19].schema(), other.outputEdiFileCount);
+      if (isValidValue(fields()[19], other.outputInterchangeCount)) {
+        this.outputInterchangeCount = data().deepCopy(fields()[19].schema(), other.outputInterchangeCount);
         fieldSetFlags()[19] = true;
       }
-      if (isValidValue(fields()[20], other.outputInterchangeCount)) {
-        this.outputInterchangeCount = data().deepCopy(fields()[20].schema(), other.outputInterchangeCount);
+      if (isValidValue(fields()[20], other.outputUdfDocumentCount)) {
+        this.outputUdfDocumentCount = data().deepCopy(fields()[20].schema(), other.outputUdfDocumentCount);
         fieldSetFlags()[20] = true;
       }
-      if (isValidValue(fields()[21], other.outputUdfDocumentCount)) {
-        this.outputUdfDocumentCount = data().deepCopy(fields()[21].schema(), other.outputUdfDocumentCount);
+      if (isValidValue(fields()[21], other.outputUdfFileCount)) {
+        this.outputUdfFileCount = data().deepCopy(fields()[21].schema(), other.outputUdfFileCount);
         fieldSetFlags()[21] = true;
       }
-      if (isValidValue(fields()[22], other.outputUdfFileCount)) {
-        this.outputUdfFileCount = data().deepCopy(fields()[22].schema(), other.outputUdfFileCount);
+      if (isValidValue(fields()[22], other.rejectedFileCount)) {
+        this.rejectedFileCount = data().deepCopy(fields()[22].schema(), other.rejectedFileCount);
         fieldSetFlags()[22] = true;
       }
-      if (isValidValue(fields()[23], other.rejectedFileCount)) {
-        this.rejectedFileCount = data().deepCopy(fields()[23].schema(), other.rejectedFileCount);
+      if (isValidValue(fields()[23], other.xifInfo)) {
+        this.xifInfo = data().deepCopy(fields()[23].schema(), other.xifInfo);
         fieldSetFlags()[23] = true;
       }
+      this.xifInfoBuilder = null;
     }
 
     /**
@@ -887,6 +887,693 @@ public class FileIntrospectedEvent extends org.apache.avro.specific.SpecificReco
     }
 
     /**
+      * Gets the value of the 'assets' field.
+      * @return The value.
+      */
+    public java.util.List<com.opentext.bn.converters.avro.entity.Asset> getAssets() {
+      return assets;
+    }
+
+    /**
+      * Sets the value of the 'assets' field.
+      * @param value The value of 'assets'.
+      * @return This builder.
+      */
+    public com.opentext.bn.converters.avro.entity.FileIntrospectedEvent.Builder setAssets(java.util.List<com.opentext.bn.converters.avro.entity.Asset> value) {
+      validate(fields()[5], value);
+      this.assets = value;
+      fieldSetFlags()[5] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'assets' field has been set.
+      * @return True if the 'assets' field has been set, false otherwise.
+      */
+    public boolean hasAssets() {
+      return fieldSetFlags()[5];
+    }
+
+
+    /**
+      * Clears the value of the 'assets' field.
+      * @return This builder.
+      */
+    public com.opentext.bn.converters.avro.entity.FileIntrospectedEvent.Builder clearAssets() {
+      assets = null;
+      fieldSetFlags()[5] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'appFileCount' field.
+      * @return The value.
+      */
+    public java.lang.Integer getAppFileCount() {
+      return appFileCount;
+    }
+
+    /**
+      * Sets the value of the 'appFileCount' field.
+      * @param value The value of 'appFileCount'.
+      * @return This builder.
+      */
+    public com.opentext.bn.converters.avro.entity.FileIntrospectedEvent.Builder setAppFileCount(int value) {
+      validate(fields()[6], value);
+      this.appFileCount = value;
+      fieldSetFlags()[6] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'appFileCount' field has been set.
+      * @return True if the 'appFileCount' field has been set, false otherwise.
+      */
+    public boolean hasAppFileCount() {
+      return fieldSetFlags()[6];
+    }
+
+
+    /**
+      * Clears the value of the 'appFileCount' field.
+      * @return This builder.
+      */
+    public com.opentext.bn.converters.avro.entity.FileIntrospectedEvent.Builder clearAppFileCount() {
+      fieldSetFlags()[6] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'bypassFileCount' field.
+      * @return The value.
+      */
+    public java.lang.Integer getBypassFileCount() {
+      return bypassFileCount;
+    }
+
+    /**
+      * Sets the value of the 'bypassFileCount' field.
+      * @param value The value of 'bypassFileCount'.
+      * @return This builder.
+      */
+    public com.opentext.bn.converters.avro.entity.FileIntrospectedEvent.Builder setBypassFileCount(int value) {
+      validate(fields()[7], value);
+      this.bypassFileCount = value;
+      fieldSetFlags()[7] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'bypassFileCount' field has been set.
+      * @return True if the 'bypassFileCount' field has been set, false otherwise.
+      */
+    public boolean hasBypassFileCount() {
+      return fieldSetFlags()[7];
+    }
+
+
+    /**
+      * Clears the value of the 'bypassFileCount' field.
+      * @return This builder.
+      */
+    public com.opentext.bn.converters.avro.entity.FileIntrospectedEvent.Builder clearBypassFileCount() {
+      fieldSetFlags()[7] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'comFileCount' field.
+      * @return The value.
+      */
+    public java.lang.Integer getComFileCount() {
+      return comFileCount;
+    }
+
+    /**
+      * Sets the value of the 'comFileCount' field.
+      * @param value The value of 'comFileCount'.
+      * @return This builder.
+      */
+    public com.opentext.bn.converters.avro.entity.FileIntrospectedEvent.Builder setComFileCount(int value) {
+      validate(fields()[8], value);
+      this.comFileCount = value;
+      fieldSetFlags()[8] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'comFileCount' field has been set.
+      * @return True if the 'comFileCount' field has been set, false otherwise.
+      */
+    public boolean hasComFileCount() {
+      return fieldSetFlags()[8];
+    }
+
+
+    /**
+      * Clears the value of the 'comFileCount' field.
+      * @return This builder.
+      */
+    public com.opentext.bn.converters.avro.entity.FileIntrospectedEvent.Builder clearComFileCount() {
+      fieldSetFlags()[8] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'errorCount' field.
+      * @return The value.
+      */
+    public java.lang.Integer getErrorCount() {
+      return errorCount;
+    }
+
+    /**
+      * Sets the value of the 'errorCount' field.
+      * @param value The value of 'errorCount'.
+      * @return This builder.
+      */
+    public com.opentext.bn.converters.avro.entity.FileIntrospectedEvent.Builder setErrorCount(int value) {
+      validate(fields()[9], value);
+      this.errorCount = value;
+      fieldSetFlags()[9] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'errorCount' field has been set.
+      * @return True if the 'errorCount' field has been set, false otherwise.
+      */
+    public boolean hasErrorCount() {
+      return fieldSetFlags()[9];
+    }
+
+
+    /**
+      * Clears the value of the 'errorCount' field.
+      * @return This builder.
+      */
+    public com.opentext.bn.converters.avro.entity.FileIntrospectedEvent.Builder clearErrorCount() {
+      fieldSetFlags()[9] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'inputEdiDocumentCount' field.
+      * @return The value.
+      */
+    public java.lang.Integer getInputEdiDocumentCount() {
+      return inputEdiDocumentCount;
+    }
+
+    /**
+      * Sets the value of the 'inputEdiDocumentCount' field.
+      * @param value The value of 'inputEdiDocumentCount'.
+      * @return This builder.
+      */
+    public com.opentext.bn.converters.avro.entity.FileIntrospectedEvent.Builder setInputEdiDocumentCount(int value) {
+      validate(fields()[10], value);
+      this.inputEdiDocumentCount = value;
+      fieldSetFlags()[10] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'inputEdiDocumentCount' field has been set.
+      * @return True if the 'inputEdiDocumentCount' field has been set, false otherwise.
+      */
+    public boolean hasInputEdiDocumentCount() {
+      return fieldSetFlags()[10];
+    }
+
+
+    /**
+      * Clears the value of the 'inputEdiDocumentCount' field.
+      * @return This builder.
+      */
+    public com.opentext.bn.converters.avro.entity.FileIntrospectedEvent.Builder clearInputEdiDocumentCount() {
+      fieldSetFlags()[10] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'inputEdiFileCount' field.
+      * @return The value.
+      */
+    public java.lang.Integer getInputEdiFileCount() {
+      return inputEdiFileCount;
+    }
+
+    /**
+      * Sets the value of the 'inputEdiFileCount' field.
+      * @param value The value of 'inputEdiFileCount'.
+      * @return This builder.
+      */
+    public com.opentext.bn.converters.avro.entity.FileIntrospectedEvent.Builder setInputEdiFileCount(int value) {
+      validate(fields()[11], value);
+      this.inputEdiFileCount = value;
+      fieldSetFlags()[11] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'inputEdiFileCount' field has been set.
+      * @return True if the 'inputEdiFileCount' field has been set, false otherwise.
+      */
+    public boolean hasInputEdiFileCount() {
+      return fieldSetFlags()[11];
+    }
+
+
+    /**
+      * Clears the value of the 'inputEdiFileCount' field.
+      * @return This builder.
+      */
+    public com.opentext.bn.converters.avro.entity.FileIntrospectedEvent.Builder clearInputEdiFileCount() {
+      fieldSetFlags()[11] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'inputInterchangeCount' field.
+      * @return The value.
+      */
+    public java.lang.Integer getInputInterchangeCount() {
+      return inputInterchangeCount;
+    }
+
+    /**
+      * Sets the value of the 'inputInterchangeCount' field.
+      * @param value The value of 'inputInterchangeCount'.
+      * @return This builder.
+      */
+    public com.opentext.bn.converters.avro.entity.FileIntrospectedEvent.Builder setInputInterchangeCount(int value) {
+      validate(fields()[12], value);
+      this.inputInterchangeCount = value;
+      fieldSetFlags()[12] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'inputInterchangeCount' field has been set.
+      * @return True if the 'inputInterchangeCount' field has been set, false otherwise.
+      */
+    public boolean hasInputInterchangeCount() {
+      return fieldSetFlags()[12];
+    }
+
+
+    /**
+      * Clears the value of the 'inputInterchangeCount' field.
+      * @return This builder.
+      */
+    public com.opentext.bn.converters.avro.entity.FileIntrospectedEvent.Builder clearInputInterchangeCount() {
+      fieldSetFlags()[12] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'inputUdfDocumentCount' field.
+      * @return The value.
+      */
+    public java.lang.Integer getInputUdfDocumentCount() {
+      return inputUdfDocumentCount;
+    }
+
+    /**
+      * Sets the value of the 'inputUdfDocumentCount' field.
+      * @param value The value of 'inputUdfDocumentCount'.
+      * @return This builder.
+      */
+    public com.opentext.bn.converters.avro.entity.FileIntrospectedEvent.Builder setInputUdfDocumentCount(int value) {
+      validate(fields()[13], value);
+      this.inputUdfDocumentCount = value;
+      fieldSetFlags()[13] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'inputUdfDocumentCount' field has been set.
+      * @return True if the 'inputUdfDocumentCount' field has been set, false otherwise.
+      */
+    public boolean hasInputUdfDocumentCount() {
+      return fieldSetFlags()[13];
+    }
+
+
+    /**
+      * Clears the value of the 'inputUdfDocumentCount' field.
+      * @return This builder.
+      */
+    public com.opentext.bn.converters.avro.entity.FileIntrospectedEvent.Builder clearInputUdfDocumentCount() {
+      fieldSetFlags()[13] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'inputUdfFileCount' field.
+      * @return The value.
+      */
+    public java.lang.Integer getInputUdfFileCount() {
+      return inputUdfFileCount;
+    }
+
+    /**
+      * Sets the value of the 'inputUdfFileCount' field.
+      * @param value The value of 'inputUdfFileCount'.
+      * @return This builder.
+      */
+    public com.opentext.bn.converters.avro.entity.FileIntrospectedEvent.Builder setInputUdfFileCount(int value) {
+      validate(fields()[14], value);
+      this.inputUdfFileCount = value;
+      fieldSetFlags()[14] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'inputUdfFileCount' field has been set.
+      * @return True if the 'inputUdfFileCount' field has been set, false otherwise.
+      */
+    public boolean hasInputUdfFileCount() {
+      return fieldSetFlags()[14];
+    }
+
+
+    /**
+      * Clears the value of the 'inputUdfFileCount' field.
+      * @return This builder.
+      */
+    public com.opentext.bn.converters.avro.entity.FileIntrospectedEvent.Builder clearInputUdfFileCount() {
+      fieldSetFlags()[14] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'introspectionSessionNumber' field.
+      * @return The value.
+      */
+    public java.lang.String getIntrospectionSessionNumber() {
+      return introspectionSessionNumber;
+    }
+
+    /**
+      * Sets the value of the 'introspectionSessionNumber' field.
+      * @param value The value of 'introspectionSessionNumber'.
+      * @return This builder.
+      */
+    public com.opentext.bn.converters.avro.entity.FileIntrospectedEvent.Builder setIntrospectionSessionNumber(java.lang.String value) {
+      validate(fields()[15], value);
+      this.introspectionSessionNumber = value;
+      fieldSetFlags()[15] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'introspectionSessionNumber' field has been set.
+      * @return True if the 'introspectionSessionNumber' field has been set, false otherwise.
+      */
+    public boolean hasIntrospectionSessionNumber() {
+      return fieldSetFlags()[15];
+    }
+
+
+    /**
+      * Clears the value of the 'introspectionSessionNumber' field.
+      * @return This builder.
+      */
+    public com.opentext.bn.converters.avro.entity.FileIntrospectedEvent.Builder clearIntrospectionSessionNumber() {
+      introspectionSessionNumber = null;
+      fieldSetFlags()[15] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'introspectionSource' field.
+      * @return The value.
+      */
+    public java.lang.String getIntrospectionSource() {
+      return introspectionSource;
+    }
+
+    /**
+      * Sets the value of the 'introspectionSource' field.
+      * @param value The value of 'introspectionSource'.
+      * @return This builder.
+      */
+    public com.opentext.bn.converters.avro.entity.FileIntrospectedEvent.Builder setIntrospectionSource(java.lang.String value) {
+      validate(fields()[16], value);
+      this.introspectionSource = value;
+      fieldSetFlags()[16] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'introspectionSource' field has been set.
+      * @return True if the 'introspectionSource' field has been set, false otherwise.
+      */
+    public boolean hasIntrospectionSource() {
+      return fieldSetFlags()[16];
+    }
+
+
+    /**
+      * Clears the value of the 'introspectionSource' field.
+      * @return This builder.
+      */
+    public com.opentext.bn.converters.avro.entity.FileIntrospectedEvent.Builder clearIntrospectionSource() {
+      introspectionSource = null;
+      fieldSetFlags()[16] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'outputEdiDocumentCount' field.
+      * @return The value.
+      */
+    public java.lang.Integer getOutputEdiDocumentCount() {
+      return outputEdiDocumentCount;
+    }
+
+    /**
+      * Sets the value of the 'outputEdiDocumentCount' field.
+      * @param value The value of 'outputEdiDocumentCount'.
+      * @return This builder.
+      */
+    public com.opentext.bn.converters.avro.entity.FileIntrospectedEvent.Builder setOutputEdiDocumentCount(int value) {
+      validate(fields()[17], value);
+      this.outputEdiDocumentCount = value;
+      fieldSetFlags()[17] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'outputEdiDocumentCount' field has been set.
+      * @return True if the 'outputEdiDocumentCount' field has been set, false otherwise.
+      */
+    public boolean hasOutputEdiDocumentCount() {
+      return fieldSetFlags()[17];
+    }
+
+
+    /**
+      * Clears the value of the 'outputEdiDocumentCount' field.
+      * @return This builder.
+      */
+    public com.opentext.bn.converters.avro.entity.FileIntrospectedEvent.Builder clearOutputEdiDocumentCount() {
+      fieldSetFlags()[17] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'outputEdiFileCount' field.
+      * @return The value.
+      */
+    public java.lang.Integer getOutputEdiFileCount() {
+      return outputEdiFileCount;
+    }
+
+    /**
+      * Sets the value of the 'outputEdiFileCount' field.
+      * @param value The value of 'outputEdiFileCount'.
+      * @return This builder.
+      */
+    public com.opentext.bn.converters.avro.entity.FileIntrospectedEvent.Builder setOutputEdiFileCount(int value) {
+      validate(fields()[18], value);
+      this.outputEdiFileCount = value;
+      fieldSetFlags()[18] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'outputEdiFileCount' field has been set.
+      * @return True if the 'outputEdiFileCount' field has been set, false otherwise.
+      */
+    public boolean hasOutputEdiFileCount() {
+      return fieldSetFlags()[18];
+    }
+
+
+    /**
+      * Clears the value of the 'outputEdiFileCount' field.
+      * @return This builder.
+      */
+    public com.opentext.bn.converters.avro.entity.FileIntrospectedEvent.Builder clearOutputEdiFileCount() {
+      fieldSetFlags()[18] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'outputInterchangeCount' field.
+      * @return The value.
+      */
+    public java.lang.Integer getOutputInterchangeCount() {
+      return outputInterchangeCount;
+    }
+
+    /**
+      * Sets the value of the 'outputInterchangeCount' field.
+      * @param value The value of 'outputInterchangeCount'.
+      * @return This builder.
+      */
+    public com.opentext.bn.converters.avro.entity.FileIntrospectedEvent.Builder setOutputInterchangeCount(int value) {
+      validate(fields()[19], value);
+      this.outputInterchangeCount = value;
+      fieldSetFlags()[19] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'outputInterchangeCount' field has been set.
+      * @return True if the 'outputInterchangeCount' field has been set, false otherwise.
+      */
+    public boolean hasOutputInterchangeCount() {
+      return fieldSetFlags()[19];
+    }
+
+
+    /**
+      * Clears the value of the 'outputInterchangeCount' field.
+      * @return This builder.
+      */
+    public com.opentext.bn.converters.avro.entity.FileIntrospectedEvent.Builder clearOutputInterchangeCount() {
+      fieldSetFlags()[19] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'outputUdfDocumentCount' field.
+      * @return The value.
+      */
+    public java.lang.Integer getOutputUdfDocumentCount() {
+      return outputUdfDocumentCount;
+    }
+
+    /**
+      * Sets the value of the 'outputUdfDocumentCount' field.
+      * @param value The value of 'outputUdfDocumentCount'.
+      * @return This builder.
+      */
+    public com.opentext.bn.converters.avro.entity.FileIntrospectedEvent.Builder setOutputUdfDocumentCount(int value) {
+      validate(fields()[20], value);
+      this.outputUdfDocumentCount = value;
+      fieldSetFlags()[20] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'outputUdfDocumentCount' field has been set.
+      * @return True if the 'outputUdfDocumentCount' field has been set, false otherwise.
+      */
+    public boolean hasOutputUdfDocumentCount() {
+      return fieldSetFlags()[20];
+    }
+
+
+    /**
+      * Clears the value of the 'outputUdfDocumentCount' field.
+      * @return This builder.
+      */
+    public com.opentext.bn.converters.avro.entity.FileIntrospectedEvent.Builder clearOutputUdfDocumentCount() {
+      fieldSetFlags()[20] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'outputUdfFileCount' field.
+      * @return The value.
+      */
+    public java.lang.Integer getOutputUdfFileCount() {
+      return outputUdfFileCount;
+    }
+
+    /**
+      * Sets the value of the 'outputUdfFileCount' field.
+      * @param value The value of 'outputUdfFileCount'.
+      * @return This builder.
+      */
+    public com.opentext.bn.converters.avro.entity.FileIntrospectedEvent.Builder setOutputUdfFileCount(int value) {
+      validate(fields()[21], value);
+      this.outputUdfFileCount = value;
+      fieldSetFlags()[21] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'outputUdfFileCount' field has been set.
+      * @return True if the 'outputUdfFileCount' field has been set, false otherwise.
+      */
+    public boolean hasOutputUdfFileCount() {
+      return fieldSetFlags()[21];
+    }
+
+
+    /**
+      * Clears the value of the 'outputUdfFileCount' field.
+      * @return This builder.
+      */
+    public com.opentext.bn.converters.avro.entity.FileIntrospectedEvent.Builder clearOutputUdfFileCount() {
+      fieldSetFlags()[21] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'rejectedFileCount' field.
+      * @return The value.
+      */
+    public java.lang.Integer getRejectedFileCount() {
+      return rejectedFileCount;
+    }
+
+    /**
+      * Sets the value of the 'rejectedFileCount' field.
+      * @param value The value of 'rejectedFileCount'.
+      * @return This builder.
+      */
+    public com.opentext.bn.converters.avro.entity.FileIntrospectedEvent.Builder setRejectedFileCount(int value) {
+      validate(fields()[22], value);
+      this.rejectedFileCount = value;
+      fieldSetFlags()[22] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'rejectedFileCount' field has been set.
+      * @return True if the 'rejectedFileCount' field has been set, false otherwise.
+      */
+    public boolean hasRejectedFileCount() {
+      return fieldSetFlags()[22];
+    }
+
+
+    /**
+      * Clears the value of the 'rejectedFileCount' field.
+      * @return This builder.
+      */
+    public com.opentext.bn.converters.avro.entity.FileIntrospectedEvent.Builder clearRejectedFileCount() {
+      fieldSetFlags()[22] = false;
+      return this;
+    }
+
+    /**
       * Gets the value of the 'xifInfo' field.
       * @return The value.
       */
@@ -900,10 +1587,10 @@ public class FileIntrospectedEvent extends org.apache.avro.specific.SpecificReco
       * @return This builder.
       */
     public com.opentext.bn.converters.avro.entity.FileIntrospectedEvent.Builder setXifInfo(com.opentext.bn.converters.avro.entity.PayloadRef value) {
-      validate(fields()[5], value);
+      validate(fields()[23], value);
       this.xifInfoBuilder = null;
       this.xifInfo = value;
-      fieldSetFlags()[5] = true;
+      fieldSetFlags()[23] = true;
       return this;
     }
 
@@ -912,7 +1599,7 @@ public class FileIntrospectedEvent extends org.apache.avro.specific.SpecificReco
       * @return True if the 'xifInfo' field has been set, false otherwise.
       */
     public boolean hasXifInfo() {
-      return fieldSetFlags()[5];
+      return fieldSetFlags()[23];
     }
 
     /**
@@ -956,693 +1643,6 @@ public class FileIntrospectedEvent extends org.apache.avro.specific.SpecificReco
     public com.opentext.bn.converters.avro.entity.FileIntrospectedEvent.Builder clearXifInfo() {
       xifInfo = null;
       xifInfoBuilder = null;
-      fieldSetFlags()[5] = false;
-      return this;
-    }
-
-    /**
-      * Gets the value of the 'assets' field.
-      * @return The value.
-      */
-    public java.util.List<com.opentext.bn.converters.avro.entity.Asset> getAssets() {
-      return assets;
-    }
-
-    /**
-      * Sets the value of the 'assets' field.
-      * @param value The value of 'assets'.
-      * @return This builder.
-      */
-    public com.opentext.bn.converters.avro.entity.FileIntrospectedEvent.Builder setAssets(java.util.List<com.opentext.bn.converters.avro.entity.Asset> value) {
-      validate(fields()[6], value);
-      this.assets = value;
-      fieldSetFlags()[6] = true;
-      return this;
-    }
-
-    /**
-      * Checks whether the 'assets' field has been set.
-      * @return True if the 'assets' field has been set, false otherwise.
-      */
-    public boolean hasAssets() {
-      return fieldSetFlags()[6];
-    }
-
-
-    /**
-      * Clears the value of the 'assets' field.
-      * @return This builder.
-      */
-    public com.opentext.bn.converters.avro.entity.FileIntrospectedEvent.Builder clearAssets() {
-      assets = null;
-      fieldSetFlags()[6] = false;
-      return this;
-    }
-
-    /**
-      * Gets the value of the 'appFileCount' field.
-      * @return The value.
-      */
-    public java.lang.Integer getAppFileCount() {
-      return appFileCount;
-    }
-
-    /**
-      * Sets the value of the 'appFileCount' field.
-      * @param value The value of 'appFileCount'.
-      * @return This builder.
-      */
-    public com.opentext.bn.converters.avro.entity.FileIntrospectedEvent.Builder setAppFileCount(int value) {
-      validate(fields()[7], value);
-      this.appFileCount = value;
-      fieldSetFlags()[7] = true;
-      return this;
-    }
-
-    /**
-      * Checks whether the 'appFileCount' field has been set.
-      * @return True if the 'appFileCount' field has been set, false otherwise.
-      */
-    public boolean hasAppFileCount() {
-      return fieldSetFlags()[7];
-    }
-
-
-    /**
-      * Clears the value of the 'appFileCount' field.
-      * @return This builder.
-      */
-    public com.opentext.bn.converters.avro.entity.FileIntrospectedEvent.Builder clearAppFileCount() {
-      fieldSetFlags()[7] = false;
-      return this;
-    }
-
-    /**
-      * Gets the value of the 'bypassFileCount' field.
-      * @return The value.
-      */
-    public java.lang.Integer getBypassFileCount() {
-      return bypassFileCount;
-    }
-
-    /**
-      * Sets the value of the 'bypassFileCount' field.
-      * @param value The value of 'bypassFileCount'.
-      * @return This builder.
-      */
-    public com.opentext.bn.converters.avro.entity.FileIntrospectedEvent.Builder setBypassFileCount(int value) {
-      validate(fields()[8], value);
-      this.bypassFileCount = value;
-      fieldSetFlags()[8] = true;
-      return this;
-    }
-
-    /**
-      * Checks whether the 'bypassFileCount' field has been set.
-      * @return True if the 'bypassFileCount' field has been set, false otherwise.
-      */
-    public boolean hasBypassFileCount() {
-      return fieldSetFlags()[8];
-    }
-
-
-    /**
-      * Clears the value of the 'bypassFileCount' field.
-      * @return This builder.
-      */
-    public com.opentext.bn.converters.avro.entity.FileIntrospectedEvent.Builder clearBypassFileCount() {
-      fieldSetFlags()[8] = false;
-      return this;
-    }
-
-    /**
-      * Gets the value of the 'comFileCount' field.
-      * @return The value.
-      */
-    public java.lang.Integer getComFileCount() {
-      return comFileCount;
-    }
-
-    /**
-      * Sets the value of the 'comFileCount' field.
-      * @param value The value of 'comFileCount'.
-      * @return This builder.
-      */
-    public com.opentext.bn.converters.avro.entity.FileIntrospectedEvent.Builder setComFileCount(int value) {
-      validate(fields()[9], value);
-      this.comFileCount = value;
-      fieldSetFlags()[9] = true;
-      return this;
-    }
-
-    /**
-      * Checks whether the 'comFileCount' field has been set.
-      * @return True if the 'comFileCount' field has been set, false otherwise.
-      */
-    public boolean hasComFileCount() {
-      return fieldSetFlags()[9];
-    }
-
-
-    /**
-      * Clears the value of the 'comFileCount' field.
-      * @return This builder.
-      */
-    public com.opentext.bn.converters.avro.entity.FileIntrospectedEvent.Builder clearComFileCount() {
-      fieldSetFlags()[9] = false;
-      return this;
-    }
-
-    /**
-      * Gets the value of the 'errorCount' field.
-      * @return The value.
-      */
-    public java.lang.Integer getErrorCount() {
-      return errorCount;
-    }
-
-    /**
-      * Sets the value of the 'errorCount' field.
-      * @param value The value of 'errorCount'.
-      * @return This builder.
-      */
-    public com.opentext.bn.converters.avro.entity.FileIntrospectedEvent.Builder setErrorCount(int value) {
-      validate(fields()[10], value);
-      this.errorCount = value;
-      fieldSetFlags()[10] = true;
-      return this;
-    }
-
-    /**
-      * Checks whether the 'errorCount' field has been set.
-      * @return True if the 'errorCount' field has been set, false otherwise.
-      */
-    public boolean hasErrorCount() {
-      return fieldSetFlags()[10];
-    }
-
-
-    /**
-      * Clears the value of the 'errorCount' field.
-      * @return This builder.
-      */
-    public com.opentext.bn.converters.avro.entity.FileIntrospectedEvent.Builder clearErrorCount() {
-      fieldSetFlags()[10] = false;
-      return this;
-    }
-
-    /**
-      * Gets the value of the 'inputEdiDocumentCount' field.
-      * @return The value.
-      */
-    public java.lang.Integer getInputEdiDocumentCount() {
-      return inputEdiDocumentCount;
-    }
-
-    /**
-      * Sets the value of the 'inputEdiDocumentCount' field.
-      * @param value The value of 'inputEdiDocumentCount'.
-      * @return This builder.
-      */
-    public com.opentext.bn.converters.avro.entity.FileIntrospectedEvent.Builder setInputEdiDocumentCount(int value) {
-      validate(fields()[11], value);
-      this.inputEdiDocumentCount = value;
-      fieldSetFlags()[11] = true;
-      return this;
-    }
-
-    /**
-      * Checks whether the 'inputEdiDocumentCount' field has been set.
-      * @return True if the 'inputEdiDocumentCount' field has been set, false otherwise.
-      */
-    public boolean hasInputEdiDocumentCount() {
-      return fieldSetFlags()[11];
-    }
-
-
-    /**
-      * Clears the value of the 'inputEdiDocumentCount' field.
-      * @return This builder.
-      */
-    public com.opentext.bn.converters.avro.entity.FileIntrospectedEvent.Builder clearInputEdiDocumentCount() {
-      fieldSetFlags()[11] = false;
-      return this;
-    }
-
-    /**
-      * Gets the value of the 'inputEdiFileCount' field.
-      * @return The value.
-      */
-    public java.lang.Integer getInputEdiFileCount() {
-      return inputEdiFileCount;
-    }
-
-    /**
-      * Sets the value of the 'inputEdiFileCount' field.
-      * @param value The value of 'inputEdiFileCount'.
-      * @return This builder.
-      */
-    public com.opentext.bn.converters.avro.entity.FileIntrospectedEvent.Builder setInputEdiFileCount(int value) {
-      validate(fields()[12], value);
-      this.inputEdiFileCount = value;
-      fieldSetFlags()[12] = true;
-      return this;
-    }
-
-    /**
-      * Checks whether the 'inputEdiFileCount' field has been set.
-      * @return True if the 'inputEdiFileCount' field has been set, false otherwise.
-      */
-    public boolean hasInputEdiFileCount() {
-      return fieldSetFlags()[12];
-    }
-
-
-    /**
-      * Clears the value of the 'inputEdiFileCount' field.
-      * @return This builder.
-      */
-    public com.opentext.bn.converters.avro.entity.FileIntrospectedEvent.Builder clearInputEdiFileCount() {
-      fieldSetFlags()[12] = false;
-      return this;
-    }
-
-    /**
-      * Gets the value of the 'inputInterchangeCount' field.
-      * @return The value.
-      */
-    public java.lang.Integer getInputInterchangeCount() {
-      return inputInterchangeCount;
-    }
-
-    /**
-      * Sets the value of the 'inputInterchangeCount' field.
-      * @param value The value of 'inputInterchangeCount'.
-      * @return This builder.
-      */
-    public com.opentext.bn.converters.avro.entity.FileIntrospectedEvent.Builder setInputInterchangeCount(int value) {
-      validate(fields()[13], value);
-      this.inputInterchangeCount = value;
-      fieldSetFlags()[13] = true;
-      return this;
-    }
-
-    /**
-      * Checks whether the 'inputInterchangeCount' field has been set.
-      * @return True if the 'inputInterchangeCount' field has been set, false otherwise.
-      */
-    public boolean hasInputInterchangeCount() {
-      return fieldSetFlags()[13];
-    }
-
-
-    /**
-      * Clears the value of the 'inputInterchangeCount' field.
-      * @return This builder.
-      */
-    public com.opentext.bn.converters.avro.entity.FileIntrospectedEvent.Builder clearInputInterchangeCount() {
-      fieldSetFlags()[13] = false;
-      return this;
-    }
-
-    /**
-      * Gets the value of the 'inputUdfDocumentCount' field.
-      * @return The value.
-      */
-    public java.lang.Integer getInputUdfDocumentCount() {
-      return inputUdfDocumentCount;
-    }
-
-    /**
-      * Sets the value of the 'inputUdfDocumentCount' field.
-      * @param value The value of 'inputUdfDocumentCount'.
-      * @return This builder.
-      */
-    public com.opentext.bn.converters.avro.entity.FileIntrospectedEvent.Builder setInputUdfDocumentCount(int value) {
-      validate(fields()[14], value);
-      this.inputUdfDocumentCount = value;
-      fieldSetFlags()[14] = true;
-      return this;
-    }
-
-    /**
-      * Checks whether the 'inputUdfDocumentCount' field has been set.
-      * @return True if the 'inputUdfDocumentCount' field has been set, false otherwise.
-      */
-    public boolean hasInputUdfDocumentCount() {
-      return fieldSetFlags()[14];
-    }
-
-
-    /**
-      * Clears the value of the 'inputUdfDocumentCount' field.
-      * @return This builder.
-      */
-    public com.opentext.bn.converters.avro.entity.FileIntrospectedEvent.Builder clearInputUdfDocumentCount() {
-      fieldSetFlags()[14] = false;
-      return this;
-    }
-
-    /**
-      * Gets the value of the 'inputUdfFileCount' field.
-      * @return The value.
-      */
-    public java.lang.Integer getInputUdfFileCount() {
-      return inputUdfFileCount;
-    }
-
-    /**
-      * Sets the value of the 'inputUdfFileCount' field.
-      * @param value The value of 'inputUdfFileCount'.
-      * @return This builder.
-      */
-    public com.opentext.bn.converters.avro.entity.FileIntrospectedEvent.Builder setInputUdfFileCount(int value) {
-      validate(fields()[15], value);
-      this.inputUdfFileCount = value;
-      fieldSetFlags()[15] = true;
-      return this;
-    }
-
-    /**
-      * Checks whether the 'inputUdfFileCount' field has been set.
-      * @return True if the 'inputUdfFileCount' field has been set, false otherwise.
-      */
-    public boolean hasInputUdfFileCount() {
-      return fieldSetFlags()[15];
-    }
-
-
-    /**
-      * Clears the value of the 'inputUdfFileCount' field.
-      * @return This builder.
-      */
-    public com.opentext.bn.converters.avro.entity.FileIntrospectedEvent.Builder clearInputUdfFileCount() {
-      fieldSetFlags()[15] = false;
-      return this;
-    }
-
-    /**
-      * Gets the value of the 'introspectionSessionNumber' field.
-      * @return The value.
-      */
-    public java.lang.String getIntrospectionSessionNumber() {
-      return introspectionSessionNumber;
-    }
-
-    /**
-      * Sets the value of the 'introspectionSessionNumber' field.
-      * @param value The value of 'introspectionSessionNumber'.
-      * @return This builder.
-      */
-    public com.opentext.bn.converters.avro.entity.FileIntrospectedEvent.Builder setIntrospectionSessionNumber(java.lang.String value) {
-      validate(fields()[16], value);
-      this.introspectionSessionNumber = value;
-      fieldSetFlags()[16] = true;
-      return this;
-    }
-
-    /**
-      * Checks whether the 'introspectionSessionNumber' field has been set.
-      * @return True if the 'introspectionSessionNumber' field has been set, false otherwise.
-      */
-    public boolean hasIntrospectionSessionNumber() {
-      return fieldSetFlags()[16];
-    }
-
-
-    /**
-      * Clears the value of the 'introspectionSessionNumber' field.
-      * @return This builder.
-      */
-    public com.opentext.bn.converters.avro.entity.FileIntrospectedEvent.Builder clearIntrospectionSessionNumber() {
-      introspectionSessionNumber = null;
-      fieldSetFlags()[16] = false;
-      return this;
-    }
-
-    /**
-      * Gets the value of the 'introspectionSource' field.
-      * @return The value.
-      */
-    public java.lang.String getIntrospectionSource() {
-      return introspectionSource;
-    }
-
-    /**
-      * Sets the value of the 'introspectionSource' field.
-      * @param value The value of 'introspectionSource'.
-      * @return This builder.
-      */
-    public com.opentext.bn.converters.avro.entity.FileIntrospectedEvent.Builder setIntrospectionSource(java.lang.String value) {
-      validate(fields()[17], value);
-      this.introspectionSource = value;
-      fieldSetFlags()[17] = true;
-      return this;
-    }
-
-    /**
-      * Checks whether the 'introspectionSource' field has been set.
-      * @return True if the 'introspectionSource' field has been set, false otherwise.
-      */
-    public boolean hasIntrospectionSource() {
-      return fieldSetFlags()[17];
-    }
-
-
-    /**
-      * Clears the value of the 'introspectionSource' field.
-      * @return This builder.
-      */
-    public com.opentext.bn.converters.avro.entity.FileIntrospectedEvent.Builder clearIntrospectionSource() {
-      introspectionSource = null;
-      fieldSetFlags()[17] = false;
-      return this;
-    }
-
-    /**
-      * Gets the value of the 'outputEdiDocumentCount' field.
-      * @return The value.
-      */
-    public java.lang.Integer getOutputEdiDocumentCount() {
-      return outputEdiDocumentCount;
-    }
-
-    /**
-      * Sets the value of the 'outputEdiDocumentCount' field.
-      * @param value The value of 'outputEdiDocumentCount'.
-      * @return This builder.
-      */
-    public com.opentext.bn.converters.avro.entity.FileIntrospectedEvent.Builder setOutputEdiDocumentCount(int value) {
-      validate(fields()[18], value);
-      this.outputEdiDocumentCount = value;
-      fieldSetFlags()[18] = true;
-      return this;
-    }
-
-    /**
-      * Checks whether the 'outputEdiDocumentCount' field has been set.
-      * @return True if the 'outputEdiDocumentCount' field has been set, false otherwise.
-      */
-    public boolean hasOutputEdiDocumentCount() {
-      return fieldSetFlags()[18];
-    }
-
-
-    /**
-      * Clears the value of the 'outputEdiDocumentCount' field.
-      * @return This builder.
-      */
-    public com.opentext.bn.converters.avro.entity.FileIntrospectedEvent.Builder clearOutputEdiDocumentCount() {
-      fieldSetFlags()[18] = false;
-      return this;
-    }
-
-    /**
-      * Gets the value of the 'outputEdiFileCount' field.
-      * @return The value.
-      */
-    public java.lang.Integer getOutputEdiFileCount() {
-      return outputEdiFileCount;
-    }
-
-    /**
-      * Sets the value of the 'outputEdiFileCount' field.
-      * @param value The value of 'outputEdiFileCount'.
-      * @return This builder.
-      */
-    public com.opentext.bn.converters.avro.entity.FileIntrospectedEvent.Builder setOutputEdiFileCount(int value) {
-      validate(fields()[19], value);
-      this.outputEdiFileCount = value;
-      fieldSetFlags()[19] = true;
-      return this;
-    }
-
-    /**
-      * Checks whether the 'outputEdiFileCount' field has been set.
-      * @return True if the 'outputEdiFileCount' field has been set, false otherwise.
-      */
-    public boolean hasOutputEdiFileCount() {
-      return fieldSetFlags()[19];
-    }
-
-
-    /**
-      * Clears the value of the 'outputEdiFileCount' field.
-      * @return This builder.
-      */
-    public com.opentext.bn.converters.avro.entity.FileIntrospectedEvent.Builder clearOutputEdiFileCount() {
-      fieldSetFlags()[19] = false;
-      return this;
-    }
-
-    /**
-      * Gets the value of the 'outputInterchangeCount' field.
-      * @return The value.
-      */
-    public java.lang.Integer getOutputInterchangeCount() {
-      return outputInterchangeCount;
-    }
-
-    /**
-      * Sets the value of the 'outputInterchangeCount' field.
-      * @param value The value of 'outputInterchangeCount'.
-      * @return This builder.
-      */
-    public com.opentext.bn.converters.avro.entity.FileIntrospectedEvent.Builder setOutputInterchangeCount(int value) {
-      validate(fields()[20], value);
-      this.outputInterchangeCount = value;
-      fieldSetFlags()[20] = true;
-      return this;
-    }
-
-    /**
-      * Checks whether the 'outputInterchangeCount' field has been set.
-      * @return True if the 'outputInterchangeCount' field has been set, false otherwise.
-      */
-    public boolean hasOutputInterchangeCount() {
-      return fieldSetFlags()[20];
-    }
-
-
-    /**
-      * Clears the value of the 'outputInterchangeCount' field.
-      * @return This builder.
-      */
-    public com.opentext.bn.converters.avro.entity.FileIntrospectedEvent.Builder clearOutputInterchangeCount() {
-      fieldSetFlags()[20] = false;
-      return this;
-    }
-
-    /**
-      * Gets the value of the 'outputUdfDocumentCount' field.
-      * @return The value.
-      */
-    public java.lang.Integer getOutputUdfDocumentCount() {
-      return outputUdfDocumentCount;
-    }
-
-    /**
-      * Sets the value of the 'outputUdfDocumentCount' field.
-      * @param value The value of 'outputUdfDocumentCount'.
-      * @return This builder.
-      */
-    public com.opentext.bn.converters.avro.entity.FileIntrospectedEvent.Builder setOutputUdfDocumentCount(int value) {
-      validate(fields()[21], value);
-      this.outputUdfDocumentCount = value;
-      fieldSetFlags()[21] = true;
-      return this;
-    }
-
-    /**
-      * Checks whether the 'outputUdfDocumentCount' field has been set.
-      * @return True if the 'outputUdfDocumentCount' field has been set, false otherwise.
-      */
-    public boolean hasOutputUdfDocumentCount() {
-      return fieldSetFlags()[21];
-    }
-
-
-    /**
-      * Clears the value of the 'outputUdfDocumentCount' field.
-      * @return This builder.
-      */
-    public com.opentext.bn.converters.avro.entity.FileIntrospectedEvent.Builder clearOutputUdfDocumentCount() {
-      fieldSetFlags()[21] = false;
-      return this;
-    }
-
-    /**
-      * Gets the value of the 'outputUdfFileCount' field.
-      * @return The value.
-      */
-    public java.lang.Integer getOutputUdfFileCount() {
-      return outputUdfFileCount;
-    }
-
-    /**
-      * Sets the value of the 'outputUdfFileCount' field.
-      * @param value The value of 'outputUdfFileCount'.
-      * @return This builder.
-      */
-    public com.opentext.bn.converters.avro.entity.FileIntrospectedEvent.Builder setOutputUdfFileCount(int value) {
-      validate(fields()[22], value);
-      this.outputUdfFileCount = value;
-      fieldSetFlags()[22] = true;
-      return this;
-    }
-
-    /**
-      * Checks whether the 'outputUdfFileCount' field has been set.
-      * @return True if the 'outputUdfFileCount' field has been set, false otherwise.
-      */
-    public boolean hasOutputUdfFileCount() {
-      return fieldSetFlags()[22];
-    }
-
-
-    /**
-      * Clears the value of the 'outputUdfFileCount' field.
-      * @return This builder.
-      */
-    public com.opentext.bn.converters.avro.entity.FileIntrospectedEvent.Builder clearOutputUdfFileCount() {
-      fieldSetFlags()[22] = false;
-      return this;
-    }
-
-    /**
-      * Gets the value of the 'rejectedFileCount' field.
-      * @return The value.
-      */
-    public java.lang.Integer getRejectedFileCount() {
-      return rejectedFileCount;
-    }
-
-    /**
-      * Sets the value of the 'rejectedFileCount' field.
-      * @param value The value of 'rejectedFileCount'.
-      * @return This builder.
-      */
-    public com.opentext.bn.converters.avro.entity.FileIntrospectedEvent.Builder setRejectedFileCount(int value) {
-      validate(fields()[23], value);
-      this.rejectedFileCount = value;
-      fieldSetFlags()[23] = true;
-      return this;
-    }
-
-    /**
-      * Checks whether the 'rejectedFileCount' field has been set.
-      * @return True if the 'rejectedFileCount' field has been set, false otherwise.
-      */
-    public boolean hasRejectedFileCount() {
-      return fieldSetFlags()[23];
-    }
-
-
-    /**
-      * Clears the value of the 'rejectedFileCount' field.
-      * @return This builder.
-      */
-    public com.opentext.bn.converters.avro.entity.FileIntrospectedEvent.Builder clearRejectedFileCount() {
       fieldSetFlags()[23] = false;
       return this;
     }
@@ -1657,29 +1657,29 @@ public class FileIntrospectedEvent extends org.apache.avro.specific.SpecificReco
         record.eventId = fieldSetFlags()[2] ? this.eventId : (java.lang.String) defaultValue(fields()[2]);
         record.transactionId = fieldSetFlags()[3] ? this.transactionId : (java.lang.String) defaultValue(fields()[3]);
         record.taskId = fieldSetFlags()[4] ? this.taskId : (java.lang.String) defaultValue(fields()[4]);
+        record.assets = fieldSetFlags()[5] ? this.assets : (java.util.List<com.opentext.bn.converters.avro.entity.Asset>) defaultValue(fields()[5]);
+        record.appFileCount = fieldSetFlags()[6] ? this.appFileCount : (java.lang.Integer) defaultValue(fields()[6]);
+        record.bypassFileCount = fieldSetFlags()[7] ? this.bypassFileCount : (java.lang.Integer) defaultValue(fields()[7]);
+        record.comFileCount = fieldSetFlags()[8] ? this.comFileCount : (java.lang.Integer) defaultValue(fields()[8]);
+        record.errorCount = fieldSetFlags()[9] ? this.errorCount : (java.lang.Integer) defaultValue(fields()[9]);
+        record.inputEdiDocumentCount = fieldSetFlags()[10] ? this.inputEdiDocumentCount : (java.lang.Integer) defaultValue(fields()[10]);
+        record.inputEdiFileCount = fieldSetFlags()[11] ? this.inputEdiFileCount : (java.lang.Integer) defaultValue(fields()[11]);
+        record.inputInterchangeCount = fieldSetFlags()[12] ? this.inputInterchangeCount : (java.lang.Integer) defaultValue(fields()[12]);
+        record.inputUdfDocumentCount = fieldSetFlags()[13] ? this.inputUdfDocumentCount : (java.lang.Integer) defaultValue(fields()[13]);
+        record.inputUdfFileCount = fieldSetFlags()[14] ? this.inputUdfFileCount : (java.lang.Integer) defaultValue(fields()[14]);
+        record.introspectionSessionNumber = fieldSetFlags()[15] ? this.introspectionSessionNumber : (java.lang.String) defaultValue(fields()[15]);
+        record.introspectionSource = fieldSetFlags()[16] ? this.introspectionSource : (java.lang.String) defaultValue(fields()[16]);
+        record.outputEdiDocumentCount = fieldSetFlags()[17] ? this.outputEdiDocumentCount : (java.lang.Integer) defaultValue(fields()[17]);
+        record.outputEdiFileCount = fieldSetFlags()[18] ? this.outputEdiFileCount : (java.lang.Integer) defaultValue(fields()[18]);
+        record.outputInterchangeCount = fieldSetFlags()[19] ? this.outputInterchangeCount : (java.lang.Integer) defaultValue(fields()[19]);
+        record.outputUdfDocumentCount = fieldSetFlags()[20] ? this.outputUdfDocumentCount : (java.lang.Integer) defaultValue(fields()[20]);
+        record.outputUdfFileCount = fieldSetFlags()[21] ? this.outputUdfFileCount : (java.lang.Integer) defaultValue(fields()[21]);
+        record.rejectedFileCount = fieldSetFlags()[22] ? this.rejectedFileCount : (java.lang.Integer) defaultValue(fields()[22]);
         if (xifInfoBuilder != null) {
           record.xifInfo = this.xifInfoBuilder.build();
         } else {
-          record.xifInfo = fieldSetFlags()[5] ? this.xifInfo : (com.opentext.bn.converters.avro.entity.PayloadRef) defaultValue(fields()[5]);
+          record.xifInfo = fieldSetFlags()[23] ? this.xifInfo : (com.opentext.bn.converters.avro.entity.PayloadRef) defaultValue(fields()[23]);
         }
-        record.assets = fieldSetFlags()[6] ? this.assets : (java.util.List<com.opentext.bn.converters.avro.entity.Asset>) defaultValue(fields()[6]);
-        record.appFileCount = fieldSetFlags()[7] ? this.appFileCount : (java.lang.Integer) defaultValue(fields()[7]);
-        record.bypassFileCount = fieldSetFlags()[8] ? this.bypassFileCount : (java.lang.Integer) defaultValue(fields()[8]);
-        record.comFileCount = fieldSetFlags()[9] ? this.comFileCount : (java.lang.Integer) defaultValue(fields()[9]);
-        record.errorCount = fieldSetFlags()[10] ? this.errorCount : (java.lang.Integer) defaultValue(fields()[10]);
-        record.inputEdiDocumentCount = fieldSetFlags()[11] ? this.inputEdiDocumentCount : (java.lang.Integer) defaultValue(fields()[11]);
-        record.inputEdiFileCount = fieldSetFlags()[12] ? this.inputEdiFileCount : (java.lang.Integer) defaultValue(fields()[12]);
-        record.inputInterchangeCount = fieldSetFlags()[13] ? this.inputInterchangeCount : (java.lang.Integer) defaultValue(fields()[13]);
-        record.inputUdfDocumentCount = fieldSetFlags()[14] ? this.inputUdfDocumentCount : (java.lang.Integer) defaultValue(fields()[14]);
-        record.inputUdfFileCount = fieldSetFlags()[15] ? this.inputUdfFileCount : (java.lang.Integer) defaultValue(fields()[15]);
-        record.introspectionSessionNumber = fieldSetFlags()[16] ? this.introspectionSessionNumber : (java.lang.String) defaultValue(fields()[16]);
-        record.introspectionSource = fieldSetFlags()[17] ? this.introspectionSource : (java.lang.String) defaultValue(fields()[17]);
-        record.outputEdiDocumentCount = fieldSetFlags()[18] ? this.outputEdiDocumentCount : (java.lang.Integer) defaultValue(fields()[18]);
-        record.outputEdiFileCount = fieldSetFlags()[19] ? this.outputEdiFileCount : (java.lang.Integer) defaultValue(fields()[19]);
-        record.outputInterchangeCount = fieldSetFlags()[20] ? this.outputInterchangeCount : (java.lang.Integer) defaultValue(fields()[20]);
-        record.outputUdfDocumentCount = fieldSetFlags()[21] ? this.outputUdfDocumentCount : (java.lang.Integer) defaultValue(fields()[21]);
-        record.outputUdfFileCount = fieldSetFlags()[22] ? this.outputUdfFileCount : (java.lang.Integer) defaultValue(fields()[22]);
-        record.rejectedFileCount = fieldSetFlags()[23] ? this.rejectedFileCount : (java.lang.Integer) defaultValue(fields()[23]);
         return record;
       } catch (java.lang.Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);

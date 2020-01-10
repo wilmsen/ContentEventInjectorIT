@@ -69,7 +69,7 @@ public class EndpointConfig implements WebMvcConfigurer {
 				"visibility.platform.receiveerror", "visibility.platform.deliverycompleted",
 				"visibility.platform.deliveryreadyforpickup", "visibility.platform.deliveryerror",
 				"visibility.platform.document", "visibility.platform.envelope", "visibility.platform.introspection",
-				"visibility.platform.contenterror", "visibility.introspection.document",
+				"visibility.platform.contenterror", "visibility.introspection.document", "visibility.introspection.file",
 				"visibility.introspection.envelope", "visibility.introspection.contenterror", "visibility.fgfa.status",
 				"visibility.notificationrequest", "visibility.internal.facycle", "visibility.internal.fgfastatus")
 				.build();
@@ -192,7 +192,7 @@ public class EndpointConfig implements WebMvcConfigurer {
 	}
 	
 	@Bean
-	public KafkaEndpoint receiveCompletedKafkaEndpoint() {
+	public KafkaEndpoint legacyKafkaEndpoint() {
 		Map<String, Object> props = new HashMap<>();
 		props.put("schema.registry.url", "http://127.0.0.1:8081");
 		props.put("specific.avro.reader", "true");
@@ -228,6 +228,19 @@ public class EndpointConfig implements WebMvcConfigurer {
 				io.confluent.kafka.serializers.subject.TopicRecordNameStrategy.class.getName());
 		return CitrusEndpoints.kafka().asynchronous().server("localhost:9092")
 				.topic("visibility.introspection.envelope").keyDeserializer(StringDeserializer.class)
+				.valueDeserializer(KafkaAvroDeserializer.class).offsetReset("earliest").consumerGroup("CitrusTest")
+				.consumerProperties(props).build();
+	}
+	
+	@Bean
+	public KafkaEndpoint fileKafkaEndpoint() {
+		Map<String, Object> props = new HashMap<>();
+		props.put("schema.registry.url", "http://127.0.0.1:8081");
+		props.put("specific.avro.reader", "true");
+		props.put("value.subject.name.strategy",
+				io.confluent.kafka.serializers.subject.TopicRecordNameStrategy.class.getName());
+		return CitrusEndpoints.kafka().asynchronous().server("localhost:9092")
+				.topic("visibility.introspection.file").keyDeserializer(StringDeserializer.class)
 				.valueDeserializer(KafkaAvroDeserializer.class).offsetReset("earliest").consumerGroup("CitrusTest")
 				.consumerProperties(props).build();
 	}

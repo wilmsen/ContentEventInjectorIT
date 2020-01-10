@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AIRecognitionTranslationStatus
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="OTIntrospectInterface_v1_22.xsd">
+	<Host systemType="Linux" name="lit-vwos-q004.qa.gxsonline.net" />
+	<Server cluster="lit" OT_QUEUEID="22"
+		OT_DIR="/qual/qtoista2/container/BizLink33/app3.3.0/bin"
+		version="Version: BizManager 3.3.0.68 Build: 36 - build 16.10.1.B102 Transformation Patch: 17 Build: Thu 27 Sep 2018 03:49:29 PM CDT" />
+	<Session number="1133232" introspectList="MS"
+		dateTimeStart="2018-10-16T15:18:41Z"
+		dateTimeEnd="2018-10-16T15:18:41Z" translateMode="Both"
+		traceUseful="No" disposition="final" statusCode="1"
+		statusCodeDesc="processed" aprf="597" direction="Inbound"
+		senderID="d3d56271-7" receiverID="f615eede-b" />
+	<ModelsUsed>
+		<File name="Any EDI.envelopeRecognitionBDD"
+			lastModDate="2018-10-16T15:18:41Z" />
+		<File name="ROSSTi31541ANY" lastModDate="2018-09-06T11:15:39Z" />
+	</ModelsUsed>
+	<Input>
+		<File name="Ross_IB.txt"
+			uri="dsmkey=var_dsmkey1&amp;nodeID=14&amp;dataStore=DSM"
+			size="630" />
+		<Standard uuid="023d365e-c90f-4ed8-b123-2e0ace9539db"
+			type="X12" direction="Inbound" version="00401"
+			testIndicator="Production" translatable="Yes" status="COMPLETE"
+			sequence="1">
+			<PosStart>1</PosStart>
+			<PosEnd>631</PosEnd>
+			<Sender>
+				<ID>GTNEXUS</ID>
+				<Qual>ZZ</Qual>
+			</Sender>
+			<Receiver>
+				<ID>DHLC-RSS</ID>
+				<Qual>ZZ</Qual>
+			</Receiver>
+			<Date>20181005</Date>
+			<Time>115300</Time>
+			<ControlNumber>b95769a1-</ControlNumber>
+			<Group status="Processed" sequence="1"
+				uuid="e1de6b6e-556b-4c36-a273-56b8e87559f3">
+				<PosStart>107</PosStart>
+				<PosEnd>614</PosEnd>
+				<Sender>
+					<ID>GTNEXUS</ID>
+					<Qual />
+				</Sender>
+				<Receiver>
+					<ID>DHLC-RSS</ID>
+					<Qual />
+				</Receiver>
+				<ControlNumber>8408c3af-</ControlNumber>
+				<Message standard="X12" type="315"
+					uuid="4db25ff9-efba-43a4-9b58-9cc547a2138f" version="004010"
+					status="Processed" sequence="1" translateMode="Both">
+					<PosStart>271</PosStart>
+					<PosEnd>705</PosEnd>
+					<Sender>
+						<ID>GTNEXUS</ID>
+						<Qual>ZZ</Qual>
+					</Sender>
+					<Receiver>
+						<ID>DHLC-RSS</ID>
+						<Qual>ZZ</Qual>
+					</Receiver>
+					<ProfileName>R0S.COM.01/ZZ:GTNEXUS/ZZ:DHLC-RSS/315/164310004</ProfileName>
+					<ControlNumber>dc2e63de-</ControlNumber>
+					<OutputFile type="Application">GTNEXUS_ZZ181016151841Ross_IB.xml</OutputFile>
+					<LabelValues>
+						<Set>
+							<Label key="primary">Equipment Number</Label>
+							<Value>5560384</Value>
+						</Set>
+						<Set>
+							<Label key="secondary">Date</Label>
+							<Value>20181005</Value>
+						</Set>
+					</LabelValues>
+				</Message>
+				<LabelValues>
+					<Set>
+						<Label key="secondary">Function Code</Label>
+						<Value>QO</Value>
+					</Set>
+				</LabelValues>
+			</Group>
+		</Standard>
+	</Input>
+	<Output fileCount="1" sizeTotal="1212">
+		<Application directory="DSM">
+			<File directory="DSM" name="GTNEXUS_ZZ181016151841Ross_IB.xml"
+				uri="dsmkey=var_dsmkey2&amp;nodeID=14&amp;dataStore=DSM"
+				size="1212" sender="ROSSTGXS" receiver="ROSSTGXS_AS2" aprf="597"
+				ctlNo="11332320" />
+		</Application>
+	</Output>
+</AIRecognitionTranslationStatus>

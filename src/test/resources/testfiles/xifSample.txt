@@ -1,0 +1,192 @@
+<AIRecognitionTranslationStatus xsi:noNamespaceSchemaLocation="OTIntrospectInterface_v1_27.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"> 
+<Host systemType="UNIX" name="lit-vaos-q017.qa.gxsonline.net"/>
+<Server cluster="lit" OT_QUEUEID="t1" OT_DIR="/qual/qtoaita2/ai/Tranprod" version="Version 5.2.4.168 otBuild: 02/04/19 at: 06:45:24  rev: a8fb32781a88"/>
+<Session number="00000AAIV" introspectList="MS" dateTimeStart="2019-08-13T05:11:21Z" dateTimeEnd="2019-08-13T05:11:22Z" translateMode="Both" traceUseful="No" disposition="final" statusCode="1" statusCodeDesc="processed" senderID="ZZ:LCLPRODEDI" receiverID="08:925753CB01" aprf="850" serviceName="C101SolnID" codePage="English_UnitedStates.Latin1@Binary" direction="Inbound"/>
+<CmdLineArgs>
+<PREM>MADIRA</PREM>
+<RECEIVERID>08:925753CB01</RECEIVERID>
+<DEBUG>Yes</DEBUG>
+<ENCODING>Latin1</ENCODING>
+<ISBYPASS>No</ISBYPASS>
+<APRF>850</APRF>
+<SVC_NAME>C101SolnID</SVC_NAME>
+<URI>dsmkey=${DataSource#DSMKey3}&amp;nodeID=14&amp;dataStore=DSM</URI>
+<TRACE_LEVEL>1023</TRACE_LEVEL>
+<SENDERID>ZZ:LCLPRODEDI</SENDERID>
+<ATTACHMENT>OTRecognPre.att</ATTACHMENT>
+<LOG_LEVEL>TRACE</LOG_LEVEL>
+<tgts_logInfo>0ab30fa8-8b48-43f9-a32a-67458ab61c39</tgts_logInfo>
+<SERVICE_NAME>C101SolnID</SERVICE_NAME>
+<XML_VALIDATE>No</XML_VALIDATE>
+<TIMEOUTADDON>0</TIMEOUTADDON>
+<TRANSLATION_MODE>Both</TRANSLATION_MODE>
+<EXECUTION_MODE>NORMAL</EXECUTION_MODE>
+</CmdLineArgs>
+<ModelsUsed>
+<File name="DPSGKi85041vNATL.att" lastModDate="2014-08-18T17:44:26Z"/>
+<File name="DPSGKi85041vNATLs.mdl" lastModDate="2018-07-18T09:36:46Z"/>
+<File name="X12850SI.mdl" lastModDate="2019-02-12T15:58:15Z"/>
+</ModelsUsed>
+<Input>
+<File uri="dsmkey=${DataSource#DSMKey3}&amp;nodeID=14&amp;dataStore=DSM" size="2348"/>
+<Standard type="X12" direction="Inbound" version="00401" testIndicator="Production" translatable="Yes" status="Processed" sequence="1" uuid="${DataSource#UUID1}">
+<PosStart>1</PosStart>
+<PosEnd>2348</PosEnd>
+<Sender>
+<ID>LCLPRODEDI</ID>
+<Qual>ZZ</Qual>
+</Sender>
+<Receiver>
+<ID>925753CB01</ID>
+<Qual>08</Qual>
+</Receiver>
+<ProfileName>C101</ProfileName>
+<Date>20110810</Date>
+<Time>151500</Time>
+<ControlNumber>${DataSource#ICControl}</ControlNumber>
+<Group status="Processed" sequence="1" uuid="${DataSource#UUID2}">
+<PosStart>107</PosStart>
+<PosEnd>2332</PosEnd>
+<Sender>
+<ID>LCLPRODEDI</ID>
+<Qual>ZZ</Qual>
+</Sender>
+<Receiver>
+<ID>925753CB01</ID>
+<Qual>08</Qual>
+</Receiver>
+<ProfileName>C101SolnID X12: AutoCreate Receiver 2039687651, Sender 4167913211</ProfileName>
+<ControlNumber>${DataSource#FGControl2}</ControlNumber>
+<Message type="850" version="004010VICS" status="Processed" translateMode="Both" sequence="1" uuid="${DataSource#UUID3}">
+<PosStart>167</PosStart>
+<PosEnd>2322</PosEnd>
+<ProfileName>C101SolnID X12: AutoCreate 004010VICS, 850</ProfileName>
+<ControlNumber>${DataSource#DOCControl}</ControlNumber>
+<OutputFile type="Application">prod_1.00000AAIV</OutputFile>
+<LabelValues>
+<Set>
+<Label key="primary">Purchase Order Number</Label>
+<Value>258154-35</Value>
+</Set>
+<Set>
+<Label key="secondary">Date</Label>
+<Value>20110810</Value>
+</Set>
+</LabelValues>
+</Message>
+<LabelValues>
+<Set>
+<Label key="secondary">Function Code</Label>
+<Value>PO</Value>
+</Set>
+</LabelValues>
+</Group>
+</Standard>
+</Input>
+<Output fileCount="2" sizeTotal="72020">
+<Application directory="appl">
+<File name="prod_1.00000AAIV" currentFileName="prod_1.00000AAIV" uri="dsmkey=${DataSource#DSMKey2}&amp;nodeID=14&amp;dataStore=DSM" encoding="English_UnitedStates.Latin1@Binary" size="71745" sender="ZZ:LCLPRODEDI" receiver="08:925753CB01" aprf="udf:850"/>
+</Application>
+<Communication directory="comm">
+<File name="CommDefault.00000AAIV" currentFileName="CommDefault.00000AAIV" uri="dsmkey=${DataSource#DSMKey4}&amp;nodeID=14&amp;dataStore=DSM" encoding="English_UnitedStates.Latin1@Binary" size="275" sender="08:925753CB01" receiver="ZZ:LCLPRODEDI" aprf="997">
+<IDs>
+<Sender>
+<ID>925753CB01</ID>
+<Qual>08</Qual>
+</Sender>
+<Receiver>
+<ID>LCLPRODEDI</ID>
+<Qual>ZZ</Qual>
+</Receiver>
+<ControlNumber>${DataSource#ICControl2}</ControlNumber>
+<Standard>X12</Standard>
+<MessageType>997</MessageType>
+<PosStart>1</PosStart>
+<PosEnd>275</PosEnd>
+</IDs>
+</File>
+<Input>
+<File uri="dsmkey=${DataSource#DSMKey4}&amp;nodeID=14&amp;dataStore=DSM" size="2348"/>
+<Standard type="X12" direction="Outbound" version="00401" testIndicator="Production" translatable="Yes" status="Processed" sequence="1" uuid="${DataSource#UUID4}">
+<PosStart>1</PosStart>
+<PosEnd>275</PosEnd>
+<Sender>
+<ID>925753CB01</ID>
+<Qual>08</Qual>
+</Sender>
+<Receiver>
+<ID>LCLPRODEDI</ID>
+<Qual>ZZ</Qual>
+</Receiver>
+<ProfileName>C101</ProfileName>
+<Date>20190813</Date>
+<Time>051100</Time>
+<ControlNumber>${DataSource#ICControl}</ControlNumber>
+<Group status="Processed" sequence="1" uuid="${DataSource#UUID5}">
+<PosStart>107</PosStart>
+<PosEnd>259</PosEnd>
+<Sender>
+<ID>925753CB01</ID>
+<Qual>ZZ</Qual>
+</Sender>
+<Receiver>
+<ID>LCLPRODEDI</ID>
+<Qual>ZZ</Qual>
+</Receiver>
+<ProfileName>C101SolnID X12: AutoCreate Receiver 2039687651, Sender 4167913211</ProfileName>
+<ControlNumber>${DataSource#FGControl}</ControlNumber>
+<Message standard="X12" type="997" version="004010VICS" status="Processed" translateMode="Introspect" sequence="1" uuid="${DataSource#UUID6}">
+<PosStart>169</PosStart>
+<PosEnd>247</PosEnd>
+<ProfileName>No Profile For: 997 Functional Acknowledgement</ProfileName>
+<ControlNumber>${DataSource#DOCControl2}</ControlNumber>
+<LabelValues>
+<Set>
+<Label>Function Code</Label>
+<Value>PO</Value>
+</Set>
+<Set>
+<Label>Group Control Number</Label>
+<Value>1954</Value>
+</Set>
+<Set hierarchy="1">
+<Label>Message Type</Label>
+<Value>850</Value>
+</Set>
+<Set hierarchy="1">
+<Label>Message Control Number</Label>
+<Value>19540001</Value>
+</Set>
+<Set hierarchy="1">
+<Label>Message Acknowledge Code</Label>
+<Value>A</Value>
+</Set>
+<Set>
+<Label>Group Acknowledge Code</Label>
+<Value>A</Value>
+</Set>
+<Set>
+<Label>Messages Received</Label>
+<Value>1</Value>
+</Set>
+<Set>
+<Label>Messages Accepted</Label>
+<Value>1</Value>
+</Set>
+</LabelValues>
+</Message>
+<LabelValues>
+<Set>
+<Label key="secondary">Function Code</Label>
+<Value>FA</Value>
+</Set>
+</LabelValues>
+</Group>
+</Standard>
+</Input>
+</Communication>
+<TraceLog directory="/qual/qtoaita2/logs">
+<File name="t1.tr00000AAIV.log" currentFileName="t1.tr00000AAIV.log" uri="dsmkey=Q14E-201908000000000156619945&amp;nodeID=14&amp;dataStore=DSM" encoding="English_UnitedStates.Latin1@Binary" type="log" solutionID="C101SolnID" sender="ZZ:LCLPRODEDI" receiver="08:925753CB01" aprf="850"/>
+</TraceLog>
+</Output>
+</AIRecognitionTranslationStatus>

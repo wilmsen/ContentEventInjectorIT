@@ -13,8 +13,8 @@ import org.apache.avro.message.SchemaStore;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class FinalTaskInfo extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -9109024999431800587L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"FinalTaskInfo\",\"namespace\":\"com.opentext.bn.converters.avro.entity\",\"fields\":[{\"name\":\"transactionStatus\",\"type\":{\"type\":\"enum\",\"name\":\"TransactionStatus\",\"symbols\":[\"PROCESSING\",\"DELIVERY_IN_PROGRESS\",\"DELIVERY_DISABLED\",\"READY_FOR_PICKUP\",\"BATCHED\",\"DELIVERED\",\"ON_HOLD\",\"DUPLICATED\",\"RECEIVER_ERROR\",\"DELIVERY_ERROR\",\"VALIDATION_ERROR\",\"FAILED\"]}}]}");
+  private static final long serialVersionUID = -8760476353978675303L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"FinalTaskInfo\",\"namespace\":\"com.opentext.bn.converters.avro.entity\",\"fields\":[{\"name\":\"transactionStatus\",\"type\":{\"type\":\"enum\",\"name\":\"TransactionStatus\",\"symbols\":[\"PROCESSING\",\"DELIVERY_IN_PROGRESS\",\"DELIVERY_DISABLED\",\"READY_FOR_PICKUP\",\"BATCHED\",\"DELIVERED\",\"ON_HOLD\",\"DUPLICATED\",\"RECEIVER_ERROR\",\"DELIVERY_ERROR\",\"VALIDATION_ERROR\",\"FAILED\",\"COMPLETED\",\"TERMINATED\"]}}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
 
   private static SpecificData MODEL$ = new SpecificData();
