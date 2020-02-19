@@ -13,8 +13,8 @@ import org.apache.avro.message.SchemaStore;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class FgFaStatusEvent extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -3325140673841385694L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"FgFaStatusEvent\",\"namespace\":\"com.opentext.bn.converters.avro.entity\",\"fields\":[{\"name\":\"ackCode\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"ackDate\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"ackDocUuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"calendarRulesetId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"cycleExpireDate\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"cycleMsg\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"cycleMsgDate\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"cycleMsgNote\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"cycleNo\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"dateDelivered\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"delinquentFlag\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"doNotTrackFlag\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"faRulesetId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"faStatus\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"faTransactionId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"fgUuid\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"fileId\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"hoursToDelinquent\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"icUuid\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"numDocAccepted\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"numDocError\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"numDocReceived\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"numDocReject\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"numOfCycles\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"numOfDocs\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"resolvedAckCodes\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"transactionId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
+  private static final long serialVersionUID = 8510832601542472773L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"FgFaStatusEvent\",\"namespace\":\"com.opentext.bn.converters.avro.entity\",\"fields\":[{\"name\":\"ackCode\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"ackDate\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"ackDocUuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"calendarRulesetId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"createdDate\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"cycleExpireDate\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"cycleMsg\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"cycleMsgDate\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"cycleMsgNote\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"cycleNo\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"dateDelivered\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"delinquentFlag\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"doNotTrackFlag\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"eventId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"eventTimestamp\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"faDocTransactionId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"faRulesetId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"faStatus\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"fgUuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"fileId\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"hoursToDelinquent\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"icUuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"lastModifiedDate\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"numDocAccepted\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"numDocError\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"numDocReceived\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"numDocReject\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"numOfCycles\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"numOfDocs\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"readyToSend\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resolvedAckCodes\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"transactionId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
 
   private static SpecificData MODEL$ = new SpecificData();
@@ -55,6 +55,7 @@ public class FgFaStatusEvent extends org.apache.avro.specific.SpecificRecordBase
    private java.lang.Long ackDate;
    private java.lang.String ackDocUuid;
    private java.lang.String calendarRulesetId;
+   private java.lang.Long createdDate;
    private java.lang.Long cycleExpireDate;
    private java.lang.String cycleMsg;
    private java.lang.Long cycleMsgDate;
@@ -63,19 +64,23 @@ public class FgFaStatusEvent extends org.apache.avro.specific.SpecificRecordBase
    private java.lang.Long dateDelivered;
    private java.lang.String delinquentFlag;
    private java.lang.String doNotTrackFlag;
+   private java.lang.String eventId;
+   private java.lang.Long eventTimestamp;
+   private java.lang.String faDocTransactionId;
    private java.lang.String faRulesetId;
    private java.lang.String faStatus;
-   private java.lang.String faTransactionId;
    private java.lang.String fgUuid;
    private java.lang.String fileId;
    private java.lang.String hoursToDelinquent;
    private java.lang.String icUuid;
+   private java.lang.Long lastModifiedDate;
    private java.lang.Integer numDocAccepted;
    private java.lang.Integer numDocError;
    private java.lang.Integer numDocReceived;
    private java.lang.Integer numDocReject;
    private java.lang.Integer numOfCycles;
    private java.lang.Integer numOfDocs;
+   private java.lang.String readyToSend;
    private java.lang.String resolvedAckCodes;
    private java.lang.String transactionId;
 
@@ -92,6 +97,7 @@ public class FgFaStatusEvent extends org.apache.avro.specific.SpecificRecordBase
    * @param ackDate The new value for ackDate
    * @param ackDocUuid The new value for ackDocUuid
    * @param calendarRulesetId The new value for calendarRulesetId
+   * @param createdDate The new value for createdDate
    * @param cycleExpireDate The new value for cycleExpireDate
    * @param cycleMsg The new value for cycleMsg
    * @param cycleMsgDate The new value for cycleMsgDate
@@ -100,27 +106,32 @@ public class FgFaStatusEvent extends org.apache.avro.specific.SpecificRecordBase
    * @param dateDelivered The new value for dateDelivered
    * @param delinquentFlag The new value for delinquentFlag
    * @param doNotTrackFlag The new value for doNotTrackFlag
+   * @param eventId The new value for eventId
+   * @param eventTimestamp The new value for eventTimestamp
+   * @param faDocTransactionId The new value for faDocTransactionId
    * @param faRulesetId The new value for faRulesetId
    * @param faStatus The new value for faStatus
-   * @param faTransactionId The new value for faTransactionId
    * @param fgUuid The new value for fgUuid
    * @param fileId The new value for fileId
    * @param hoursToDelinquent The new value for hoursToDelinquent
    * @param icUuid The new value for icUuid
+   * @param lastModifiedDate The new value for lastModifiedDate
    * @param numDocAccepted The new value for numDocAccepted
    * @param numDocError The new value for numDocError
    * @param numDocReceived The new value for numDocReceived
    * @param numDocReject The new value for numDocReject
    * @param numOfCycles The new value for numOfCycles
    * @param numOfDocs The new value for numOfDocs
+   * @param readyToSend The new value for readyToSend
    * @param resolvedAckCodes The new value for resolvedAckCodes
    * @param transactionId The new value for transactionId
    */
-  public FgFaStatusEvent(java.lang.String ackCode, java.lang.Long ackDate, java.lang.String ackDocUuid, java.lang.String calendarRulesetId, java.lang.Long cycleExpireDate, java.lang.String cycleMsg, java.lang.Long cycleMsgDate, java.lang.String cycleMsgNote, java.lang.Integer cycleNo, java.lang.Long dateDelivered, java.lang.String delinquentFlag, java.lang.String doNotTrackFlag, java.lang.String faRulesetId, java.lang.String faStatus, java.lang.String faTransactionId, java.lang.String fgUuid, java.lang.String fileId, java.lang.String hoursToDelinquent, java.lang.String icUuid, java.lang.Integer numDocAccepted, java.lang.Integer numDocError, java.lang.Integer numDocReceived, java.lang.Integer numDocReject, java.lang.Integer numOfCycles, java.lang.Integer numOfDocs, java.lang.String resolvedAckCodes, java.lang.String transactionId) {
+  public FgFaStatusEvent(java.lang.String ackCode, java.lang.Long ackDate, java.lang.String ackDocUuid, java.lang.String calendarRulesetId, java.lang.Long createdDate, java.lang.Long cycleExpireDate, java.lang.String cycleMsg, java.lang.Long cycleMsgDate, java.lang.String cycleMsgNote, java.lang.Integer cycleNo, java.lang.Long dateDelivered, java.lang.String delinquentFlag, java.lang.String doNotTrackFlag, java.lang.String eventId, java.lang.Long eventTimestamp, java.lang.String faDocTransactionId, java.lang.String faRulesetId, java.lang.String faStatus, java.lang.String fgUuid, java.lang.String fileId, java.lang.String hoursToDelinquent, java.lang.String icUuid, java.lang.Long lastModifiedDate, java.lang.Integer numDocAccepted, java.lang.Integer numDocError, java.lang.Integer numDocReceived, java.lang.Integer numDocReject, java.lang.Integer numOfCycles, java.lang.Integer numOfDocs, java.lang.String readyToSend, java.lang.String resolvedAckCodes, java.lang.String transactionId) {
     this.ackCode = ackCode;
     this.ackDate = ackDate;
     this.ackDocUuid = ackDocUuid;
     this.calendarRulesetId = calendarRulesetId;
+    this.createdDate = createdDate;
     this.cycleExpireDate = cycleExpireDate;
     this.cycleMsg = cycleMsg;
     this.cycleMsgDate = cycleMsgDate;
@@ -129,19 +140,23 @@ public class FgFaStatusEvent extends org.apache.avro.specific.SpecificRecordBase
     this.dateDelivered = dateDelivered;
     this.delinquentFlag = delinquentFlag;
     this.doNotTrackFlag = doNotTrackFlag;
+    this.eventId = eventId;
+    this.eventTimestamp = eventTimestamp;
+    this.faDocTransactionId = faDocTransactionId;
     this.faRulesetId = faRulesetId;
     this.faStatus = faStatus;
-    this.faTransactionId = faTransactionId;
     this.fgUuid = fgUuid;
     this.fileId = fileId;
     this.hoursToDelinquent = hoursToDelinquent;
     this.icUuid = icUuid;
+    this.lastModifiedDate = lastModifiedDate;
     this.numDocAccepted = numDocAccepted;
     this.numDocError = numDocError;
     this.numDocReceived = numDocReceived;
     this.numDocReject = numDocReject;
     this.numOfCycles = numOfCycles;
     this.numOfDocs = numOfDocs;
+    this.readyToSend = readyToSend;
     this.resolvedAckCodes = resolvedAckCodes;
     this.transactionId = transactionId;
   }
@@ -154,29 +169,34 @@ public class FgFaStatusEvent extends org.apache.avro.specific.SpecificRecordBase
     case 1: return ackDate;
     case 2: return ackDocUuid;
     case 3: return calendarRulesetId;
-    case 4: return cycleExpireDate;
-    case 5: return cycleMsg;
-    case 6: return cycleMsgDate;
-    case 7: return cycleMsgNote;
-    case 8: return cycleNo;
-    case 9: return dateDelivered;
-    case 10: return delinquentFlag;
-    case 11: return doNotTrackFlag;
-    case 12: return faRulesetId;
-    case 13: return faStatus;
-    case 14: return faTransactionId;
-    case 15: return fgUuid;
-    case 16: return fileId;
-    case 17: return hoursToDelinquent;
-    case 18: return icUuid;
-    case 19: return numDocAccepted;
-    case 20: return numDocError;
-    case 21: return numDocReceived;
-    case 22: return numDocReject;
-    case 23: return numOfCycles;
-    case 24: return numOfDocs;
-    case 25: return resolvedAckCodes;
-    case 26: return transactionId;
+    case 4: return createdDate;
+    case 5: return cycleExpireDate;
+    case 6: return cycleMsg;
+    case 7: return cycleMsgDate;
+    case 8: return cycleMsgNote;
+    case 9: return cycleNo;
+    case 10: return dateDelivered;
+    case 11: return delinquentFlag;
+    case 12: return doNotTrackFlag;
+    case 13: return eventId;
+    case 14: return eventTimestamp;
+    case 15: return faDocTransactionId;
+    case 16: return faRulesetId;
+    case 17: return faStatus;
+    case 18: return fgUuid;
+    case 19: return fileId;
+    case 20: return hoursToDelinquent;
+    case 21: return icUuid;
+    case 22: return lastModifiedDate;
+    case 23: return numDocAccepted;
+    case 24: return numDocError;
+    case 25: return numDocReceived;
+    case 26: return numDocReject;
+    case 27: return numOfCycles;
+    case 28: return numOfDocs;
+    case 29: return readyToSend;
+    case 30: return resolvedAckCodes;
+    case 31: return transactionId;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -189,29 +209,34 @@ public class FgFaStatusEvent extends org.apache.avro.specific.SpecificRecordBase
     case 1: ackDate = (java.lang.Long)value$; break;
     case 2: ackDocUuid = (java.lang.String)value$; break;
     case 3: calendarRulesetId = (java.lang.String)value$; break;
-    case 4: cycleExpireDate = (java.lang.Long)value$; break;
-    case 5: cycleMsg = (java.lang.String)value$; break;
-    case 6: cycleMsgDate = (java.lang.Long)value$; break;
-    case 7: cycleMsgNote = (java.lang.String)value$; break;
-    case 8: cycleNo = (java.lang.Integer)value$; break;
-    case 9: dateDelivered = (java.lang.Long)value$; break;
-    case 10: delinquentFlag = (java.lang.String)value$; break;
-    case 11: doNotTrackFlag = (java.lang.String)value$; break;
-    case 12: faRulesetId = (java.lang.String)value$; break;
-    case 13: faStatus = (java.lang.String)value$; break;
-    case 14: faTransactionId = (java.lang.String)value$; break;
-    case 15: fgUuid = (java.lang.String)value$; break;
-    case 16: fileId = (java.lang.String)value$; break;
-    case 17: hoursToDelinquent = (java.lang.String)value$; break;
-    case 18: icUuid = (java.lang.String)value$; break;
-    case 19: numDocAccepted = (java.lang.Integer)value$; break;
-    case 20: numDocError = (java.lang.Integer)value$; break;
-    case 21: numDocReceived = (java.lang.Integer)value$; break;
-    case 22: numDocReject = (java.lang.Integer)value$; break;
-    case 23: numOfCycles = (java.lang.Integer)value$; break;
-    case 24: numOfDocs = (java.lang.Integer)value$; break;
-    case 25: resolvedAckCodes = (java.lang.String)value$; break;
-    case 26: transactionId = (java.lang.String)value$; break;
+    case 4: createdDate = (java.lang.Long)value$; break;
+    case 5: cycleExpireDate = (java.lang.Long)value$; break;
+    case 6: cycleMsg = (java.lang.String)value$; break;
+    case 7: cycleMsgDate = (java.lang.Long)value$; break;
+    case 8: cycleMsgNote = (java.lang.String)value$; break;
+    case 9: cycleNo = (java.lang.Integer)value$; break;
+    case 10: dateDelivered = (java.lang.Long)value$; break;
+    case 11: delinquentFlag = (java.lang.String)value$; break;
+    case 12: doNotTrackFlag = (java.lang.String)value$; break;
+    case 13: eventId = (java.lang.String)value$; break;
+    case 14: eventTimestamp = (java.lang.Long)value$; break;
+    case 15: faDocTransactionId = (java.lang.String)value$; break;
+    case 16: faRulesetId = (java.lang.String)value$; break;
+    case 17: faStatus = (java.lang.String)value$; break;
+    case 18: fgUuid = (java.lang.String)value$; break;
+    case 19: fileId = (java.lang.String)value$; break;
+    case 20: hoursToDelinquent = (java.lang.String)value$; break;
+    case 21: icUuid = (java.lang.String)value$; break;
+    case 22: lastModifiedDate = (java.lang.Long)value$; break;
+    case 23: numDocAccepted = (java.lang.Integer)value$; break;
+    case 24: numDocError = (java.lang.Integer)value$; break;
+    case 25: numDocReceived = (java.lang.Integer)value$; break;
+    case 26: numDocReject = (java.lang.Integer)value$; break;
+    case 27: numOfCycles = (java.lang.Integer)value$; break;
+    case 28: numOfDocs = (java.lang.Integer)value$; break;
+    case 29: readyToSend = (java.lang.String)value$; break;
+    case 30: resolvedAckCodes = (java.lang.String)value$; break;
+    case 31: transactionId = (java.lang.String)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -249,6 +274,15 @@ public class FgFaStatusEvent extends org.apache.avro.specific.SpecificRecordBase
    */
   public java.lang.String getCalendarRulesetId() {
     return calendarRulesetId;
+  }
+
+
+  /**
+   * Gets the value of the 'createdDate' field.
+   * @return The value of the 'createdDate' field.
+   */
+  public java.lang.Long getCreatedDate() {
+    return createdDate;
   }
 
 
@@ -325,6 +359,33 @@ public class FgFaStatusEvent extends org.apache.avro.specific.SpecificRecordBase
 
 
   /**
+   * Gets the value of the 'eventId' field.
+   * @return The value of the 'eventId' field.
+   */
+  public java.lang.String getEventId() {
+    return eventId;
+  }
+
+
+  /**
+   * Gets the value of the 'eventTimestamp' field.
+   * @return The value of the 'eventTimestamp' field.
+   */
+  public java.lang.Long getEventTimestamp() {
+    return eventTimestamp;
+  }
+
+
+  /**
+   * Gets the value of the 'faDocTransactionId' field.
+   * @return The value of the 'faDocTransactionId' field.
+   */
+  public java.lang.String getFaDocTransactionId() {
+    return faDocTransactionId;
+  }
+
+
+  /**
    * Gets the value of the 'faRulesetId' field.
    * @return The value of the 'faRulesetId' field.
    */
@@ -339,15 +400,6 @@ public class FgFaStatusEvent extends org.apache.avro.specific.SpecificRecordBase
    */
   public java.lang.String getFaStatus() {
     return faStatus;
-  }
-
-
-  /**
-   * Gets the value of the 'faTransactionId' field.
-   * @return The value of the 'faTransactionId' field.
-   */
-  public java.lang.String getFaTransactionId() {
-    return faTransactionId;
   }
 
 
@@ -384,6 +436,15 @@ public class FgFaStatusEvent extends org.apache.avro.specific.SpecificRecordBase
    */
   public java.lang.String getIcUuid() {
     return icUuid;
+  }
+
+
+  /**
+   * Gets the value of the 'lastModifiedDate' field.
+   * @return The value of the 'lastModifiedDate' field.
+   */
+  public java.lang.Long getLastModifiedDate() {
+    return lastModifiedDate;
   }
 
 
@@ -442,6 +503,15 @@ public class FgFaStatusEvent extends org.apache.avro.specific.SpecificRecordBase
 
 
   /**
+   * Gets the value of the 'readyToSend' field.
+   * @return The value of the 'readyToSend' field.
+   */
+  public java.lang.String getReadyToSend() {
+    return readyToSend;
+  }
+
+
+  /**
    * Gets the value of the 'resolvedAckCodes' field.
    * @return The value of the 'resolvedAckCodes' field.
    */
@@ -495,6 +565,7 @@ public class FgFaStatusEvent extends org.apache.avro.specific.SpecificRecordBase
     private java.lang.Long ackDate;
     private java.lang.String ackDocUuid;
     private java.lang.String calendarRulesetId;
+    private java.lang.Long createdDate;
     private java.lang.Long cycleExpireDate;
     private java.lang.String cycleMsg;
     private java.lang.Long cycleMsgDate;
@@ -503,19 +574,23 @@ public class FgFaStatusEvent extends org.apache.avro.specific.SpecificRecordBase
     private java.lang.Long dateDelivered;
     private java.lang.String delinquentFlag;
     private java.lang.String doNotTrackFlag;
+    private java.lang.String eventId;
+    private java.lang.Long eventTimestamp;
+    private java.lang.String faDocTransactionId;
     private java.lang.String faRulesetId;
     private java.lang.String faStatus;
-    private java.lang.String faTransactionId;
     private java.lang.String fgUuid;
     private java.lang.String fileId;
     private java.lang.String hoursToDelinquent;
     private java.lang.String icUuid;
+    private java.lang.Long lastModifiedDate;
     private java.lang.Integer numDocAccepted;
     private java.lang.Integer numDocError;
     private java.lang.Integer numDocReceived;
     private java.lang.Integer numDocReject;
     private java.lang.Integer numOfCycles;
     private java.lang.Integer numOfDocs;
+    private java.lang.String readyToSend;
     private java.lang.String resolvedAckCodes;
     private java.lang.String transactionId;
 
@@ -546,97 +621,117 @@ public class FgFaStatusEvent extends org.apache.avro.specific.SpecificRecordBase
         this.calendarRulesetId = data().deepCopy(fields()[3].schema(), other.calendarRulesetId);
         fieldSetFlags()[3] = true;
       }
-      if (isValidValue(fields()[4], other.cycleExpireDate)) {
-        this.cycleExpireDate = data().deepCopy(fields()[4].schema(), other.cycleExpireDate);
+      if (isValidValue(fields()[4], other.createdDate)) {
+        this.createdDate = data().deepCopy(fields()[4].schema(), other.createdDate);
         fieldSetFlags()[4] = true;
       }
-      if (isValidValue(fields()[5], other.cycleMsg)) {
-        this.cycleMsg = data().deepCopy(fields()[5].schema(), other.cycleMsg);
+      if (isValidValue(fields()[5], other.cycleExpireDate)) {
+        this.cycleExpireDate = data().deepCopy(fields()[5].schema(), other.cycleExpireDate);
         fieldSetFlags()[5] = true;
       }
-      if (isValidValue(fields()[6], other.cycleMsgDate)) {
-        this.cycleMsgDate = data().deepCopy(fields()[6].schema(), other.cycleMsgDate);
+      if (isValidValue(fields()[6], other.cycleMsg)) {
+        this.cycleMsg = data().deepCopy(fields()[6].schema(), other.cycleMsg);
         fieldSetFlags()[6] = true;
       }
-      if (isValidValue(fields()[7], other.cycleMsgNote)) {
-        this.cycleMsgNote = data().deepCopy(fields()[7].schema(), other.cycleMsgNote);
+      if (isValidValue(fields()[7], other.cycleMsgDate)) {
+        this.cycleMsgDate = data().deepCopy(fields()[7].schema(), other.cycleMsgDate);
         fieldSetFlags()[7] = true;
       }
-      if (isValidValue(fields()[8], other.cycleNo)) {
-        this.cycleNo = data().deepCopy(fields()[8].schema(), other.cycleNo);
+      if (isValidValue(fields()[8], other.cycleMsgNote)) {
+        this.cycleMsgNote = data().deepCopy(fields()[8].schema(), other.cycleMsgNote);
         fieldSetFlags()[8] = true;
       }
-      if (isValidValue(fields()[9], other.dateDelivered)) {
-        this.dateDelivered = data().deepCopy(fields()[9].schema(), other.dateDelivered);
+      if (isValidValue(fields()[9], other.cycleNo)) {
+        this.cycleNo = data().deepCopy(fields()[9].schema(), other.cycleNo);
         fieldSetFlags()[9] = true;
       }
-      if (isValidValue(fields()[10], other.delinquentFlag)) {
-        this.delinquentFlag = data().deepCopy(fields()[10].schema(), other.delinquentFlag);
+      if (isValidValue(fields()[10], other.dateDelivered)) {
+        this.dateDelivered = data().deepCopy(fields()[10].schema(), other.dateDelivered);
         fieldSetFlags()[10] = true;
       }
-      if (isValidValue(fields()[11], other.doNotTrackFlag)) {
-        this.doNotTrackFlag = data().deepCopy(fields()[11].schema(), other.doNotTrackFlag);
+      if (isValidValue(fields()[11], other.delinquentFlag)) {
+        this.delinquentFlag = data().deepCopy(fields()[11].schema(), other.delinquentFlag);
         fieldSetFlags()[11] = true;
       }
-      if (isValidValue(fields()[12], other.faRulesetId)) {
-        this.faRulesetId = data().deepCopy(fields()[12].schema(), other.faRulesetId);
+      if (isValidValue(fields()[12], other.doNotTrackFlag)) {
+        this.doNotTrackFlag = data().deepCopy(fields()[12].schema(), other.doNotTrackFlag);
         fieldSetFlags()[12] = true;
       }
-      if (isValidValue(fields()[13], other.faStatus)) {
-        this.faStatus = data().deepCopy(fields()[13].schema(), other.faStatus);
+      if (isValidValue(fields()[13], other.eventId)) {
+        this.eventId = data().deepCopy(fields()[13].schema(), other.eventId);
         fieldSetFlags()[13] = true;
       }
-      if (isValidValue(fields()[14], other.faTransactionId)) {
-        this.faTransactionId = data().deepCopy(fields()[14].schema(), other.faTransactionId);
+      if (isValidValue(fields()[14], other.eventTimestamp)) {
+        this.eventTimestamp = data().deepCopy(fields()[14].schema(), other.eventTimestamp);
         fieldSetFlags()[14] = true;
       }
-      if (isValidValue(fields()[15], other.fgUuid)) {
-        this.fgUuid = data().deepCopy(fields()[15].schema(), other.fgUuid);
+      if (isValidValue(fields()[15], other.faDocTransactionId)) {
+        this.faDocTransactionId = data().deepCopy(fields()[15].schema(), other.faDocTransactionId);
         fieldSetFlags()[15] = true;
       }
-      if (isValidValue(fields()[16], other.fileId)) {
-        this.fileId = data().deepCopy(fields()[16].schema(), other.fileId);
+      if (isValidValue(fields()[16], other.faRulesetId)) {
+        this.faRulesetId = data().deepCopy(fields()[16].schema(), other.faRulesetId);
         fieldSetFlags()[16] = true;
       }
-      if (isValidValue(fields()[17], other.hoursToDelinquent)) {
-        this.hoursToDelinquent = data().deepCopy(fields()[17].schema(), other.hoursToDelinquent);
+      if (isValidValue(fields()[17], other.faStatus)) {
+        this.faStatus = data().deepCopy(fields()[17].schema(), other.faStatus);
         fieldSetFlags()[17] = true;
       }
-      if (isValidValue(fields()[18], other.icUuid)) {
-        this.icUuid = data().deepCopy(fields()[18].schema(), other.icUuid);
+      if (isValidValue(fields()[18], other.fgUuid)) {
+        this.fgUuid = data().deepCopy(fields()[18].schema(), other.fgUuid);
         fieldSetFlags()[18] = true;
       }
-      if (isValidValue(fields()[19], other.numDocAccepted)) {
-        this.numDocAccepted = data().deepCopy(fields()[19].schema(), other.numDocAccepted);
+      if (isValidValue(fields()[19], other.fileId)) {
+        this.fileId = data().deepCopy(fields()[19].schema(), other.fileId);
         fieldSetFlags()[19] = true;
       }
-      if (isValidValue(fields()[20], other.numDocError)) {
-        this.numDocError = data().deepCopy(fields()[20].schema(), other.numDocError);
+      if (isValidValue(fields()[20], other.hoursToDelinquent)) {
+        this.hoursToDelinquent = data().deepCopy(fields()[20].schema(), other.hoursToDelinquent);
         fieldSetFlags()[20] = true;
       }
-      if (isValidValue(fields()[21], other.numDocReceived)) {
-        this.numDocReceived = data().deepCopy(fields()[21].schema(), other.numDocReceived);
+      if (isValidValue(fields()[21], other.icUuid)) {
+        this.icUuid = data().deepCopy(fields()[21].schema(), other.icUuid);
         fieldSetFlags()[21] = true;
       }
-      if (isValidValue(fields()[22], other.numDocReject)) {
-        this.numDocReject = data().deepCopy(fields()[22].schema(), other.numDocReject);
+      if (isValidValue(fields()[22], other.lastModifiedDate)) {
+        this.lastModifiedDate = data().deepCopy(fields()[22].schema(), other.lastModifiedDate);
         fieldSetFlags()[22] = true;
       }
-      if (isValidValue(fields()[23], other.numOfCycles)) {
-        this.numOfCycles = data().deepCopy(fields()[23].schema(), other.numOfCycles);
+      if (isValidValue(fields()[23], other.numDocAccepted)) {
+        this.numDocAccepted = data().deepCopy(fields()[23].schema(), other.numDocAccepted);
         fieldSetFlags()[23] = true;
       }
-      if (isValidValue(fields()[24], other.numOfDocs)) {
-        this.numOfDocs = data().deepCopy(fields()[24].schema(), other.numOfDocs);
+      if (isValidValue(fields()[24], other.numDocError)) {
+        this.numDocError = data().deepCopy(fields()[24].schema(), other.numDocError);
         fieldSetFlags()[24] = true;
       }
-      if (isValidValue(fields()[25], other.resolvedAckCodes)) {
-        this.resolvedAckCodes = data().deepCopy(fields()[25].schema(), other.resolvedAckCodes);
+      if (isValidValue(fields()[25], other.numDocReceived)) {
+        this.numDocReceived = data().deepCopy(fields()[25].schema(), other.numDocReceived);
         fieldSetFlags()[25] = true;
       }
-      if (isValidValue(fields()[26], other.transactionId)) {
-        this.transactionId = data().deepCopy(fields()[26].schema(), other.transactionId);
+      if (isValidValue(fields()[26], other.numDocReject)) {
+        this.numDocReject = data().deepCopy(fields()[26].schema(), other.numDocReject);
         fieldSetFlags()[26] = true;
+      }
+      if (isValidValue(fields()[27], other.numOfCycles)) {
+        this.numOfCycles = data().deepCopy(fields()[27].schema(), other.numOfCycles);
+        fieldSetFlags()[27] = true;
+      }
+      if (isValidValue(fields()[28], other.numOfDocs)) {
+        this.numOfDocs = data().deepCopy(fields()[28].schema(), other.numOfDocs);
+        fieldSetFlags()[28] = true;
+      }
+      if (isValidValue(fields()[29], other.readyToSend)) {
+        this.readyToSend = data().deepCopy(fields()[29].schema(), other.readyToSend);
+        fieldSetFlags()[29] = true;
+      }
+      if (isValidValue(fields()[30], other.resolvedAckCodes)) {
+        this.resolvedAckCodes = data().deepCopy(fields()[30].schema(), other.resolvedAckCodes);
+        fieldSetFlags()[30] = true;
+      }
+      if (isValidValue(fields()[31], other.transactionId)) {
+        this.transactionId = data().deepCopy(fields()[31].schema(), other.transactionId);
+        fieldSetFlags()[31] = true;
       }
     }
 
@@ -662,97 +757,117 @@ public class FgFaStatusEvent extends org.apache.avro.specific.SpecificRecordBase
         this.calendarRulesetId = data().deepCopy(fields()[3].schema(), other.calendarRulesetId);
         fieldSetFlags()[3] = true;
       }
-      if (isValidValue(fields()[4], other.cycleExpireDate)) {
-        this.cycleExpireDate = data().deepCopy(fields()[4].schema(), other.cycleExpireDate);
+      if (isValidValue(fields()[4], other.createdDate)) {
+        this.createdDate = data().deepCopy(fields()[4].schema(), other.createdDate);
         fieldSetFlags()[4] = true;
       }
-      if (isValidValue(fields()[5], other.cycleMsg)) {
-        this.cycleMsg = data().deepCopy(fields()[5].schema(), other.cycleMsg);
+      if (isValidValue(fields()[5], other.cycleExpireDate)) {
+        this.cycleExpireDate = data().deepCopy(fields()[5].schema(), other.cycleExpireDate);
         fieldSetFlags()[5] = true;
       }
-      if (isValidValue(fields()[6], other.cycleMsgDate)) {
-        this.cycleMsgDate = data().deepCopy(fields()[6].schema(), other.cycleMsgDate);
+      if (isValidValue(fields()[6], other.cycleMsg)) {
+        this.cycleMsg = data().deepCopy(fields()[6].schema(), other.cycleMsg);
         fieldSetFlags()[6] = true;
       }
-      if (isValidValue(fields()[7], other.cycleMsgNote)) {
-        this.cycleMsgNote = data().deepCopy(fields()[7].schema(), other.cycleMsgNote);
+      if (isValidValue(fields()[7], other.cycleMsgDate)) {
+        this.cycleMsgDate = data().deepCopy(fields()[7].schema(), other.cycleMsgDate);
         fieldSetFlags()[7] = true;
       }
-      if (isValidValue(fields()[8], other.cycleNo)) {
-        this.cycleNo = data().deepCopy(fields()[8].schema(), other.cycleNo);
+      if (isValidValue(fields()[8], other.cycleMsgNote)) {
+        this.cycleMsgNote = data().deepCopy(fields()[8].schema(), other.cycleMsgNote);
         fieldSetFlags()[8] = true;
       }
-      if (isValidValue(fields()[9], other.dateDelivered)) {
-        this.dateDelivered = data().deepCopy(fields()[9].schema(), other.dateDelivered);
+      if (isValidValue(fields()[9], other.cycleNo)) {
+        this.cycleNo = data().deepCopy(fields()[9].schema(), other.cycleNo);
         fieldSetFlags()[9] = true;
       }
-      if (isValidValue(fields()[10], other.delinquentFlag)) {
-        this.delinquentFlag = data().deepCopy(fields()[10].schema(), other.delinquentFlag);
+      if (isValidValue(fields()[10], other.dateDelivered)) {
+        this.dateDelivered = data().deepCopy(fields()[10].schema(), other.dateDelivered);
         fieldSetFlags()[10] = true;
       }
-      if (isValidValue(fields()[11], other.doNotTrackFlag)) {
-        this.doNotTrackFlag = data().deepCopy(fields()[11].schema(), other.doNotTrackFlag);
+      if (isValidValue(fields()[11], other.delinquentFlag)) {
+        this.delinquentFlag = data().deepCopy(fields()[11].schema(), other.delinquentFlag);
         fieldSetFlags()[11] = true;
       }
-      if (isValidValue(fields()[12], other.faRulesetId)) {
-        this.faRulesetId = data().deepCopy(fields()[12].schema(), other.faRulesetId);
+      if (isValidValue(fields()[12], other.doNotTrackFlag)) {
+        this.doNotTrackFlag = data().deepCopy(fields()[12].schema(), other.doNotTrackFlag);
         fieldSetFlags()[12] = true;
       }
-      if (isValidValue(fields()[13], other.faStatus)) {
-        this.faStatus = data().deepCopy(fields()[13].schema(), other.faStatus);
+      if (isValidValue(fields()[13], other.eventId)) {
+        this.eventId = data().deepCopy(fields()[13].schema(), other.eventId);
         fieldSetFlags()[13] = true;
       }
-      if (isValidValue(fields()[14], other.faTransactionId)) {
-        this.faTransactionId = data().deepCopy(fields()[14].schema(), other.faTransactionId);
+      if (isValidValue(fields()[14], other.eventTimestamp)) {
+        this.eventTimestamp = data().deepCopy(fields()[14].schema(), other.eventTimestamp);
         fieldSetFlags()[14] = true;
       }
-      if (isValidValue(fields()[15], other.fgUuid)) {
-        this.fgUuid = data().deepCopy(fields()[15].schema(), other.fgUuid);
+      if (isValidValue(fields()[15], other.faDocTransactionId)) {
+        this.faDocTransactionId = data().deepCopy(fields()[15].schema(), other.faDocTransactionId);
         fieldSetFlags()[15] = true;
       }
-      if (isValidValue(fields()[16], other.fileId)) {
-        this.fileId = data().deepCopy(fields()[16].schema(), other.fileId);
+      if (isValidValue(fields()[16], other.faRulesetId)) {
+        this.faRulesetId = data().deepCopy(fields()[16].schema(), other.faRulesetId);
         fieldSetFlags()[16] = true;
       }
-      if (isValidValue(fields()[17], other.hoursToDelinquent)) {
-        this.hoursToDelinquent = data().deepCopy(fields()[17].schema(), other.hoursToDelinquent);
+      if (isValidValue(fields()[17], other.faStatus)) {
+        this.faStatus = data().deepCopy(fields()[17].schema(), other.faStatus);
         fieldSetFlags()[17] = true;
       }
-      if (isValidValue(fields()[18], other.icUuid)) {
-        this.icUuid = data().deepCopy(fields()[18].schema(), other.icUuid);
+      if (isValidValue(fields()[18], other.fgUuid)) {
+        this.fgUuid = data().deepCopy(fields()[18].schema(), other.fgUuid);
         fieldSetFlags()[18] = true;
       }
-      if (isValidValue(fields()[19], other.numDocAccepted)) {
-        this.numDocAccepted = data().deepCopy(fields()[19].schema(), other.numDocAccepted);
+      if (isValidValue(fields()[19], other.fileId)) {
+        this.fileId = data().deepCopy(fields()[19].schema(), other.fileId);
         fieldSetFlags()[19] = true;
       }
-      if (isValidValue(fields()[20], other.numDocError)) {
-        this.numDocError = data().deepCopy(fields()[20].schema(), other.numDocError);
+      if (isValidValue(fields()[20], other.hoursToDelinquent)) {
+        this.hoursToDelinquent = data().deepCopy(fields()[20].schema(), other.hoursToDelinquent);
         fieldSetFlags()[20] = true;
       }
-      if (isValidValue(fields()[21], other.numDocReceived)) {
-        this.numDocReceived = data().deepCopy(fields()[21].schema(), other.numDocReceived);
+      if (isValidValue(fields()[21], other.icUuid)) {
+        this.icUuid = data().deepCopy(fields()[21].schema(), other.icUuid);
         fieldSetFlags()[21] = true;
       }
-      if (isValidValue(fields()[22], other.numDocReject)) {
-        this.numDocReject = data().deepCopy(fields()[22].schema(), other.numDocReject);
+      if (isValidValue(fields()[22], other.lastModifiedDate)) {
+        this.lastModifiedDate = data().deepCopy(fields()[22].schema(), other.lastModifiedDate);
         fieldSetFlags()[22] = true;
       }
-      if (isValidValue(fields()[23], other.numOfCycles)) {
-        this.numOfCycles = data().deepCopy(fields()[23].schema(), other.numOfCycles);
+      if (isValidValue(fields()[23], other.numDocAccepted)) {
+        this.numDocAccepted = data().deepCopy(fields()[23].schema(), other.numDocAccepted);
         fieldSetFlags()[23] = true;
       }
-      if (isValidValue(fields()[24], other.numOfDocs)) {
-        this.numOfDocs = data().deepCopy(fields()[24].schema(), other.numOfDocs);
+      if (isValidValue(fields()[24], other.numDocError)) {
+        this.numDocError = data().deepCopy(fields()[24].schema(), other.numDocError);
         fieldSetFlags()[24] = true;
       }
-      if (isValidValue(fields()[25], other.resolvedAckCodes)) {
-        this.resolvedAckCodes = data().deepCopy(fields()[25].schema(), other.resolvedAckCodes);
+      if (isValidValue(fields()[25], other.numDocReceived)) {
+        this.numDocReceived = data().deepCopy(fields()[25].schema(), other.numDocReceived);
         fieldSetFlags()[25] = true;
       }
-      if (isValidValue(fields()[26], other.transactionId)) {
-        this.transactionId = data().deepCopy(fields()[26].schema(), other.transactionId);
+      if (isValidValue(fields()[26], other.numDocReject)) {
+        this.numDocReject = data().deepCopy(fields()[26].schema(), other.numDocReject);
         fieldSetFlags()[26] = true;
+      }
+      if (isValidValue(fields()[27], other.numOfCycles)) {
+        this.numOfCycles = data().deepCopy(fields()[27].schema(), other.numOfCycles);
+        fieldSetFlags()[27] = true;
+      }
+      if (isValidValue(fields()[28], other.numOfDocs)) {
+        this.numOfDocs = data().deepCopy(fields()[28].schema(), other.numOfDocs);
+        fieldSetFlags()[28] = true;
+      }
+      if (isValidValue(fields()[29], other.readyToSend)) {
+        this.readyToSend = data().deepCopy(fields()[29].schema(), other.readyToSend);
+        fieldSetFlags()[29] = true;
+      }
+      if (isValidValue(fields()[30], other.resolvedAckCodes)) {
+        this.resolvedAckCodes = data().deepCopy(fields()[30].schema(), other.resolvedAckCodes);
+        fieldSetFlags()[30] = true;
+      }
+      if (isValidValue(fields()[31], other.transactionId)) {
+        this.transactionId = data().deepCopy(fields()[31].schema(), other.transactionId);
+        fieldSetFlags()[31] = true;
       }
     }
 
@@ -913,6 +1028,45 @@ public class FgFaStatusEvent extends org.apache.avro.specific.SpecificRecordBase
     }
 
     /**
+      * Gets the value of the 'createdDate' field.
+      * @return The value.
+      */
+    public java.lang.Long getCreatedDate() {
+      return createdDate;
+    }
+
+    /**
+      * Sets the value of the 'createdDate' field.
+      * @param value The value of 'createdDate'.
+      * @return This builder.
+      */
+    public com.opentext.bn.converters.avro.entity.FgFaStatusEvent.Builder setCreatedDate(java.lang.Long value) {
+      validate(fields()[4], value);
+      this.createdDate = value;
+      fieldSetFlags()[4] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'createdDate' field has been set.
+      * @return True if the 'createdDate' field has been set, false otherwise.
+      */
+    public boolean hasCreatedDate() {
+      return fieldSetFlags()[4];
+    }
+
+
+    /**
+      * Clears the value of the 'createdDate' field.
+      * @return This builder.
+      */
+    public com.opentext.bn.converters.avro.entity.FgFaStatusEvent.Builder clearCreatedDate() {
+      createdDate = null;
+      fieldSetFlags()[4] = false;
+      return this;
+    }
+
+    /**
       * Gets the value of the 'cycleExpireDate' field.
       * @return The value.
       */
@@ -926,9 +1080,9 @@ public class FgFaStatusEvent extends org.apache.avro.specific.SpecificRecordBase
       * @return This builder.
       */
     public com.opentext.bn.converters.avro.entity.FgFaStatusEvent.Builder setCycleExpireDate(java.lang.Long value) {
-      validate(fields()[4], value);
+      validate(fields()[5], value);
       this.cycleExpireDate = value;
-      fieldSetFlags()[4] = true;
+      fieldSetFlags()[5] = true;
       return this;
     }
 
@@ -937,7 +1091,7 @@ public class FgFaStatusEvent extends org.apache.avro.specific.SpecificRecordBase
       * @return True if the 'cycleExpireDate' field has been set, false otherwise.
       */
     public boolean hasCycleExpireDate() {
-      return fieldSetFlags()[4];
+      return fieldSetFlags()[5];
     }
 
 
@@ -947,7 +1101,7 @@ public class FgFaStatusEvent extends org.apache.avro.specific.SpecificRecordBase
       */
     public com.opentext.bn.converters.avro.entity.FgFaStatusEvent.Builder clearCycleExpireDate() {
       cycleExpireDate = null;
-      fieldSetFlags()[4] = false;
+      fieldSetFlags()[5] = false;
       return this;
     }
 
@@ -965,9 +1119,9 @@ public class FgFaStatusEvent extends org.apache.avro.specific.SpecificRecordBase
       * @return This builder.
       */
     public com.opentext.bn.converters.avro.entity.FgFaStatusEvent.Builder setCycleMsg(java.lang.String value) {
-      validate(fields()[5], value);
+      validate(fields()[6], value);
       this.cycleMsg = value;
-      fieldSetFlags()[5] = true;
+      fieldSetFlags()[6] = true;
       return this;
     }
 
@@ -976,7 +1130,7 @@ public class FgFaStatusEvent extends org.apache.avro.specific.SpecificRecordBase
       * @return True if the 'cycleMsg' field has been set, false otherwise.
       */
     public boolean hasCycleMsg() {
-      return fieldSetFlags()[5];
+      return fieldSetFlags()[6];
     }
 
 
@@ -986,7 +1140,7 @@ public class FgFaStatusEvent extends org.apache.avro.specific.SpecificRecordBase
       */
     public com.opentext.bn.converters.avro.entity.FgFaStatusEvent.Builder clearCycleMsg() {
       cycleMsg = null;
-      fieldSetFlags()[5] = false;
+      fieldSetFlags()[6] = false;
       return this;
     }
 
@@ -1004,9 +1158,9 @@ public class FgFaStatusEvent extends org.apache.avro.specific.SpecificRecordBase
       * @return This builder.
       */
     public com.opentext.bn.converters.avro.entity.FgFaStatusEvent.Builder setCycleMsgDate(java.lang.Long value) {
-      validate(fields()[6], value);
+      validate(fields()[7], value);
       this.cycleMsgDate = value;
-      fieldSetFlags()[6] = true;
+      fieldSetFlags()[7] = true;
       return this;
     }
 
@@ -1015,7 +1169,7 @@ public class FgFaStatusEvent extends org.apache.avro.specific.SpecificRecordBase
       * @return True if the 'cycleMsgDate' field has been set, false otherwise.
       */
     public boolean hasCycleMsgDate() {
-      return fieldSetFlags()[6];
+      return fieldSetFlags()[7];
     }
 
 
@@ -1025,7 +1179,7 @@ public class FgFaStatusEvent extends org.apache.avro.specific.SpecificRecordBase
       */
     public com.opentext.bn.converters.avro.entity.FgFaStatusEvent.Builder clearCycleMsgDate() {
       cycleMsgDate = null;
-      fieldSetFlags()[6] = false;
+      fieldSetFlags()[7] = false;
       return this;
     }
 
@@ -1043,9 +1197,9 @@ public class FgFaStatusEvent extends org.apache.avro.specific.SpecificRecordBase
       * @return This builder.
       */
     public com.opentext.bn.converters.avro.entity.FgFaStatusEvent.Builder setCycleMsgNote(java.lang.String value) {
-      validate(fields()[7], value);
+      validate(fields()[8], value);
       this.cycleMsgNote = value;
-      fieldSetFlags()[7] = true;
+      fieldSetFlags()[8] = true;
       return this;
     }
 
@@ -1054,7 +1208,7 @@ public class FgFaStatusEvent extends org.apache.avro.specific.SpecificRecordBase
       * @return True if the 'cycleMsgNote' field has been set, false otherwise.
       */
     public boolean hasCycleMsgNote() {
-      return fieldSetFlags()[7];
+      return fieldSetFlags()[8];
     }
 
 
@@ -1064,7 +1218,7 @@ public class FgFaStatusEvent extends org.apache.avro.specific.SpecificRecordBase
       */
     public com.opentext.bn.converters.avro.entity.FgFaStatusEvent.Builder clearCycleMsgNote() {
       cycleMsgNote = null;
-      fieldSetFlags()[7] = false;
+      fieldSetFlags()[8] = false;
       return this;
     }
 
@@ -1082,9 +1236,9 @@ public class FgFaStatusEvent extends org.apache.avro.specific.SpecificRecordBase
       * @return This builder.
       */
     public com.opentext.bn.converters.avro.entity.FgFaStatusEvent.Builder setCycleNo(java.lang.Integer value) {
-      validate(fields()[8], value);
+      validate(fields()[9], value);
       this.cycleNo = value;
-      fieldSetFlags()[8] = true;
+      fieldSetFlags()[9] = true;
       return this;
     }
 
@@ -1093,7 +1247,7 @@ public class FgFaStatusEvent extends org.apache.avro.specific.SpecificRecordBase
       * @return True if the 'cycleNo' field has been set, false otherwise.
       */
     public boolean hasCycleNo() {
-      return fieldSetFlags()[8];
+      return fieldSetFlags()[9];
     }
 
 
@@ -1103,7 +1257,7 @@ public class FgFaStatusEvent extends org.apache.avro.specific.SpecificRecordBase
       */
     public com.opentext.bn.converters.avro.entity.FgFaStatusEvent.Builder clearCycleNo() {
       cycleNo = null;
-      fieldSetFlags()[8] = false;
+      fieldSetFlags()[9] = false;
       return this;
     }
 
@@ -1121,9 +1275,9 @@ public class FgFaStatusEvent extends org.apache.avro.specific.SpecificRecordBase
       * @return This builder.
       */
     public com.opentext.bn.converters.avro.entity.FgFaStatusEvent.Builder setDateDelivered(java.lang.Long value) {
-      validate(fields()[9], value);
+      validate(fields()[10], value);
       this.dateDelivered = value;
-      fieldSetFlags()[9] = true;
+      fieldSetFlags()[10] = true;
       return this;
     }
 
@@ -1132,7 +1286,7 @@ public class FgFaStatusEvent extends org.apache.avro.specific.SpecificRecordBase
       * @return True if the 'dateDelivered' field has been set, false otherwise.
       */
     public boolean hasDateDelivered() {
-      return fieldSetFlags()[9];
+      return fieldSetFlags()[10];
     }
 
 
@@ -1142,7 +1296,7 @@ public class FgFaStatusEvent extends org.apache.avro.specific.SpecificRecordBase
       */
     public com.opentext.bn.converters.avro.entity.FgFaStatusEvent.Builder clearDateDelivered() {
       dateDelivered = null;
-      fieldSetFlags()[9] = false;
+      fieldSetFlags()[10] = false;
       return this;
     }
 
@@ -1160,9 +1314,9 @@ public class FgFaStatusEvent extends org.apache.avro.specific.SpecificRecordBase
       * @return This builder.
       */
     public com.opentext.bn.converters.avro.entity.FgFaStatusEvent.Builder setDelinquentFlag(java.lang.String value) {
-      validate(fields()[10], value);
+      validate(fields()[11], value);
       this.delinquentFlag = value;
-      fieldSetFlags()[10] = true;
+      fieldSetFlags()[11] = true;
       return this;
     }
 
@@ -1171,7 +1325,7 @@ public class FgFaStatusEvent extends org.apache.avro.specific.SpecificRecordBase
       * @return True if the 'delinquentFlag' field has been set, false otherwise.
       */
     public boolean hasDelinquentFlag() {
-      return fieldSetFlags()[10];
+      return fieldSetFlags()[11];
     }
 
 
@@ -1181,7 +1335,7 @@ public class FgFaStatusEvent extends org.apache.avro.specific.SpecificRecordBase
       */
     public com.opentext.bn.converters.avro.entity.FgFaStatusEvent.Builder clearDelinquentFlag() {
       delinquentFlag = null;
-      fieldSetFlags()[10] = false;
+      fieldSetFlags()[11] = false;
       return this;
     }
 
@@ -1199,9 +1353,9 @@ public class FgFaStatusEvent extends org.apache.avro.specific.SpecificRecordBase
       * @return This builder.
       */
     public com.opentext.bn.converters.avro.entity.FgFaStatusEvent.Builder setDoNotTrackFlag(java.lang.String value) {
-      validate(fields()[11], value);
+      validate(fields()[12], value);
       this.doNotTrackFlag = value;
-      fieldSetFlags()[11] = true;
+      fieldSetFlags()[12] = true;
       return this;
     }
 
@@ -1210,7 +1364,7 @@ public class FgFaStatusEvent extends org.apache.avro.specific.SpecificRecordBase
       * @return True if the 'doNotTrackFlag' field has been set, false otherwise.
       */
     public boolean hasDoNotTrackFlag() {
-      return fieldSetFlags()[11];
+      return fieldSetFlags()[12];
     }
 
 
@@ -1220,7 +1374,124 @@ public class FgFaStatusEvent extends org.apache.avro.specific.SpecificRecordBase
       */
     public com.opentext.bn.converters.avro.entity.FgFaStatusEvent.Builder clearDoNotTrackFlag() {
       doNotTrackFlag = null;
-      fieldSetFlags()[11] = false;
+      fieldSetFlags()[12] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'eventId' field.
+      * @return The value.
+      */
+    public java.lang.String getEventId() {
+      return eventId;
+    }
+
+    /**
+      * Sets the value of the 'eventId' field.
+      * @param value The value of 'eventId'.
+      * @return This builder.
+      */
+    public com.opentext.bn.converters.avro.entity.FgFaStatusEvent.Builder setEventId(java.lang.String value) {
+      validate(fields()[13], value);
+      this.eventId = value;
+      fieldSetFlags()[13] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'eventId' field has been set.
+      * @return True if the 'eventId' field has been set, false otherwise.
+      */
+    public boolean hasEventId() {
+      return fieldSetFlags()[13];
+    }
+
+
+    /**
+      * Clears the value of the 'eventId' field.
+      * @return This builder.
+      */
+    public com.opentext.bn.converters.avro.entity.FgFaStatusEvent.Builder clearEventId() {
+      eventId = null;
+      fieldSetFlags()[13] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'eventTimestamp' field.
+      * @return The value.
+      */
+    public java.lang.Long getEventTimestamp() {
+      return eventTimestamp;
+    }
+
+    /**
+      * Sets the value of the 'eventTimestamp' field.
+      * @param value The value of 'eventTimestamp'.
+      * @return This builder.
+      */
+    public com.opentext.bn.converters.avro.entity.FgFaStatusEvent.Builder setEventTimestamp(java.lang.Long value) {
+      validate(fields()[14], value);
+      this.eventTimestamp = value;
+      fieldSetFlags()[14] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'eventTimestamp' field has been set.
+      * @return True if the 'eventTimestamp' field has been set, false otherwise.
+      */
+    public boolean hasEventTimestamp() {
+      return fieldSetFlags()[14];
+    }
+
+
+    /**
+      * Clears the value of the 'eventTimestamp' field.
+      * @return This builder.
+      */
+    public com.opentext.bn.converters.avro.entity.FgFaStatusEvent.Builder clearEventTimestamp() {
+      eventTimestamp = null;
+      fieldSetFlags()[14] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'faDocTransactionId' field.
+      * @return The value.
+      */
+    public java.lang.String getFaDocTransactionId() {
+      return faDocTransactionId;
+    }
+
+    /**
+      * Sets the value of the 'faDocTransactionId' field.
+      * @param value The value of 'faDocTransactionId'.
+      * @return This builder.
+      */
+    public com.opentext.bn.converters.avro.entity.FgFaStatusEvent.Builder setFaDocTransactionId(java.lang.String value) {
+      validate(fields()[15], value);
+      this.faDocTransactionId = value;
+      fieldSetFlags()[15] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'faDocTransactionId' field has been set.
+      * @return True if the 'faDocTransactionId' field has been set, false otherwise.
+      */
+    public boolean hasFaDocTransactionId() {
+      return fieldSetFlags()[15];
+    }
+
+
+    /**
+      * Clears the value of the 'faDocTransactionId' field.
+      * @return This builder.
+      */
+    public com.opentext.bn.converters.avro.entity.FgFaStatusEvent.Builder clearFaDocTransactionId() {
+      faDocTransactionId = null;
+      fieldSetFlags()[15] = false;
       return this;
     }
 
@@ -1238,9 +1509,9 @@ public class FgFaStatusEvent extends org.apache.avro.specific.SpecificRecordBase
       * @return This builder.
       */
     public com.opentext.bn.converters.avro.entity.FgFaStatusEvent.Builder setFaRulesetId(java.lang.String value) {
-      validate(fields()[12], value);
+      validate(fields()[16], value);
       this.faRulesetId = value;
-      fieldSetFlags()[12] = true;
+      fieldSetFlags()[16] = true;
       return this;
     }
 
@@ -1249,7 +1520,7 @@ public class FgFaStatusEvent extends org.apache.avro.specific.SpecificRecordBase
       * @return True if the 'faRulesetId' field has been set, false otherwise.
       */
     public boolean hasFaRulesetId() {
-      return fieldSetFlags()[12];
+      return fieldSetFlags()[16];
     }
 
 
@@ -1259,7 +1530,7 @@ public class FgFaStatusEvent extends org.apache.avro.specific.SpecificRecordBase
       */
     public com.opentext.bn.converters.avro.entity.FgFaStatusEvent.Builder clearFaRulesetId() {
       faRulesetId = null;
-      fieldSetFlags()[12] = false;
+      fieldSetFlags()[16] = false;
       return this;
     }
 
@@ -1277,9 +1548,9 @@ public class FgFaStatusEvent extends org.apache.avro.specific.SpecificRecordBase
       * @return This builder.
       */
     public com.opentext.bn.converters.avro.entity.FgFaStatusEvent.Builder setFaStatus(java.lang.String value) {
-      validate(fields()[13], value);
+      validate(fields()[17], value);
       this.faStatus = value;
-      fieldSetFlags()[13] = true;
+      fieldSetFlags()[17] = true;
       return this;
     }
 
@@ -1288,7 +1559,7 @@ public class FgFaStatusEvent extends org.apache.avro.specific.SpecificRecordBase
       * @return True if the 'faStatus' field has been set, false otherwise.
       */
     public boolean hasFaStatus() {
-      return fieldSetFlags()[13];
+      return fieldSetFlags()[17];
     }
 
 
@@ -1298,46 +1569,7 @@ public class FgFaStatusEvent extends org.apache.avro.specific.SpecificRecordBase
       */
     public com.opentext.bn.converters.avro.entity.FgFaStatusEvent.Builder clearFaStatus() {
       faStatus = null;
-      fieldSetFlags()[13] = false;
-      return this;
-    }
-
-    /**
-      * Gets the value of the 'faTransactionId' field.
-      * @return The value.
-      */
-    public java.lang.String getFaTransactionId() {
-      return faTransactionId;
-    }
-
-    /**
-      * Sets the value of the 'faTransactionId' field.
-      * @param value The value of 'faTransactionId'.
-      * @return This builder.
-      */
-    public com.opentext.bn.converters.avro.entity.FgFaStatusEvent.Builder setFaTransactionId(java.lang.String value) {
-      validate(fields()[14], value);
-      this.faTransactionId = value;
-      fieldSetFlags()[14] = true;
-      return this;
-    }
-
-    /**
-      * Checks whether the 'faTransactionId' field has been set.
-      * @return True if the 'faTransactionId' field has been set, false otherwise.
-      */
-    public boolean hasFaTransactionId() {
-      return fieldSetFlags()[14];
-    }
-
-
-    /**
-      * Clears the value of the 'faTransactionId' field.
-      * @return This builder.
-      */
-    public com.opentext.bn.converters.avro.entity.FgFaStatusEvent.Builder clearFaTransactionId() {
-      faTransactionId = null;
-      fieldSetFlags()[14] = false;
+      fieldSetFlags()[17] = false;
       return this;
     }
 
@@ -1355,9 +1587,9 @@ public class FgFaStatusEvent extends org.apache.avro.specific.SpecificRecordBase
       * @return This builder.
       */
     public com.opentext.bn.converters.avro.entity.FgFaStatusEvent.Builder setFgUuid(java.lang.String value) {
-      validate(fields()[15], value);
+      validate(fields()[18], value);
       this.fgUuid = value;
-      fieldSetFlags()[15] = true;
+      fieldSetFlags()[18] = true;
       return this;
     }
 
@@ -1366,7 +1598,7 @@ public class FgFaStatusEvent extends org.apache.avro.specific.SpecificRecordBase
       * @return True if the 'fgUuid' field has been set, false otherwise.
       */
     public boolean hasFgUuid() {
-      return fieldSetFlags()[15];
+      return fieldSetFlags()[18];
     }
 
 
@@ -1376,7 +1608,7 @@ public class FgFaStatusEvent extends org.apache.avro.specific.SpecificRecordBase
       */
     public com.opentext.bn.converters.avro.entity.FgFaStatusEvent.Builder clearFgUuid() {
       fgUuid = null;
-      fieldSetFlags()[15] = false;
+      fieldSetFlags()[18] = false;
       return this;
     }
 
@@ -1394,9 +1626,9 @@ public class FgFaStatusEvent extends org.apache.avro.specific.SpecificRecordBase
       * @return This builder.
       */
     public com.opentext.bn.converters.avro.entity.FgFaStatusEvent.Builder setFileId(java.lang.String value) {
-      validate(fields()[16], value);
+      validate(fields()[19], value);
       this.fileId = value;
-      fieldSetFlags()[16] = true;
+      fieldSetFlags()[19] = true;
       return this;
     }
 
@@ -1405,7 +1637,7 @@ public class FgFaStatusEvent extends org.apache.avro.specific.SpecificRecordBase
       * @return True if the 'fileId' field has been set, false otherwise.
       */
     public boolean hasFileId() {
-      return fieldSetFlags()[16];
+      return fieldSetFlags()[19];
     }
 
 
@@ -1415,7 +1647,7 @@ public class FgFaStatusEvent extends org.apache.avro.specific.SpecificRecordBase
       */
     public com.opentext.bn.converters.avro.entity.FgFaStatusEvent.Builder clearFileId() {
       fileId = null;
-      fieldSetFlags()[16] = false;
+      fieldSetFlags()[19] = false;
       return this;
     }
 
@@ -1433,9 +1665,9 @@ public class FgFaStatusEvent extends org.apache.avro.specific.SpecificRecordBase
       * @return This builder.
       */
     public com.opentext.bn.converters.avro.entity.FgFaStatusEvent.Builder setHoursToDelinquent(java.lang.String value) {
-      validate(fields()[17], value);
+      validate(fields()[20], value);
       this.hoursToDelinquent = value;
-      fieldSetFlags()[17] = true;
+      fieldSetFlags()[20] = true;
       return this;
     }
 
@@ -1444,7 +1676,7 @@ public class FgFaStatusEvent extends org.apache.avro.specific.SpecificRecordBase
       * @return True if the 'hoursToDelinquent' field has been set, false otherwise.
       */
     public boolean hasHoursToDelinquent() {
-      return fieldSetFlags()[17];
+      return fieldSetFlags()[20];
     }
 
 
@@ -1454,7 +1686,7 @@ public class FgFaStatusEvent extends org.apache.avro.specific.SpecificRecordBase
       */
     public com.opentext.bn.converters.avro.entity.FgFaStatusEvent.Builder clearHoursToDelinquent() {
       hoursToDelinquent = null;
-      fieldSetFlags()[17] = false;
+      fieldSetFlags()[20] = false;
       return this;
     }
 
@@ -1472,9 +1704,9 @@ public class FgFaStatusEvent extends org.apache.avro.specific.SpecificRecordBase
       * @return This builder.
       */
     public com.opentext.bn.converters.avro.entity.FgFaStatusEvent.Builder setIcUuid(java.lang.String value) {
-      validate(fields()[18], value);
+      validate(fields()[21], value);
       this.icUuid = value;
-      fieldSetFlags()[18] = true;
+      fieldSetFlags()[21] = true;
       return this;
     }
 
@@ -1483,7 +1715,7 @@ public class FgFaStatusEvent extends org.apache.avro.specific.SpecificRecordBase
       * @return True if the 'icUuid' field has been set, false otherwise.
       */
     public boolean hasIcUuid() {
-      return fieldSetFlags()[18];
+      return fieldSetFlags()[21];
     }
 
 
@@ -1493,7 +1725,46 @@ public class FgFaStatusEvent extends org.apache.avro.specific.SpecificRecordBase
       */
     public com.opentext.bn.converters.avro.entity.FgFaStatusEvent.Builder clearIcUuid() {
       icUuid = null;
-      fieldSetFlags()[18] = false;
+      fieldSetFlags()[21] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'lastModifiedDate' field.
+      * @return The value.
+      */
+    public java.lang.Long getLastModifiedDate() {
+      return lastModifiedDate;
+    }
+
+    /**
+      * Sets the value of the 'lastModifiedDate' field.
+      * @param value The value of 'lastModifiedDate'.
+      * @return This builder.
+      */
+    public com.opentext.bn.converters.avro.entity.FgFaStatusEvent.Builder setLastModifiedDate(java.lang.Long value) {
+      validate(fields()[22], value);
+      this.lastModifiedDate = value;
+      fieldSetFlags()[22] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'lastModifiedDate' field has been set.
+      * @return True if the 'lastModifiedDate' field has been set, false otherwise.
+      */
+    public boolean hasLastModifiedDate() {
+      return fieldSetFlags()[22];
+    }
+
+
+    /**
+      * Clears the value of the 'lastModifiedDate' field.
+      * @return This builder.
+      */
+    public com.opentext.bn.converters.avro.entity.FgFaStatusEvent.Builder clearLastModifiedDate() {
+      lastModifiedDate = null;
+      fieldSetFlags()[22] = false;
       return this;
     }
 
@@ -1511,9 +1782,9 @@ public class FgFaStatusEvent extends org.apache.avro.specific.SpecificRecordBase
       * @return This builder.
       */
     public com.opentext.bn.converters.avro.entity.FgFaStatusEvent.Builder setNumDocAccepted(java.lang.Integer value) {
-      validate(fields()[19], value);
+      validate(fields()[23], value);
       this.numDocAccepted = value;
-      fieldSetFlags()[19] = true;
+      fieldSetFlags()[23] = true;
       return this;
     }
 
@@ -1522,7 +1793,7 @@ public class FgFaStatusEvent extends org.apache.avro.specific.SpecificRecordBase
       * @return True if the 'numDocAccepted' field has been set, false otherwise.
       */
     public boolean hasNumDocAccepted() {
-      return fieldSetFlags()[19];
+      return fieldSetFlags()[23];
     }
 
 
@@ -1532,7 +1803,7 @@ public class FgFaStatusEvent extends org.apache.avro.specific.SpecificRecordBase
       */
     public com.opentext.bn.converters.avro.entity.FgFaStatusEvent.Builder clearNumDocAccepted() {
       numDocAccepted = null;
-      fieldSetFlags()[19] = false;
+      fieldSetFlags()[23] = false;
       return this;
     }
 
@@ -1550,9 +1821,9 @@ public class FgFaStatusEvent extends org.apache.avro.specific.SpecificRecordBase
       * @return This builder.
       */
     public com.opentext.bn.converters.avro.entity.FgFaStatusEvent.Builder setNumDocError(java.lang.Integer value) {
-      validate(fields()[20], value);
+      validate(fields()[24], value);
       this.numDocError = value;
-      fieldSetFlags()[20] = true;
+      fieldSetFlags()[24] = true;
       return this;
     }
 
@@ -1561,7 +1832,7 @@ public class FgFaStatusEvent extends org.apache.avro.specific.SpecificRecordBase
       * @return True if the 'numDocError' field has been set, false otherwise.
       */
     public boolean hasNumDocError() {
-      return fieldSetFlags()[20];
+      return fieldSetFlags()[24];
     }
 
 
@@ -1571,7 +1842,7 @@ public class FgFaStatusEvent extends org.apache.avro.specific.SpecificRecordBase
       */
     public com.opentext.bn.converters.avro.entity.FgFaStatusEvent.Builder clearNumDocError() {
       numDocError = null;
-      fieldSetFlags()[20] = false;
+      fieldSetFlags()[24] = false;
       return this;
     }
 
@@ -1589,9 +1860,9 @@ public class FgFaStatusEvent extends org.apache.avro.specific.SpecificRecordBase
       * @return This builder.
       */
     public com.opentext.bn.converters.avro.entity.FgFaStatusEvent.Builder setNumDocReceived(java.lang.Integer value) {
-      validate(fields()[21], value);
+      validate(fields()[25], value);
       this.numDocReceived = value;
-      fieldSetFlags()[21] = true;
+      fieldSetFlags()[25] = true;
       return this;
     }
 
@@ -1600,7 +1871,7 @@ public class FgFaStatusEvent extends org.apache.avro.specific.SpecificRecordBase
       * @return True if the 'numDocReceived' field has been set, false otherwise.
       */
     public boolean hasNumDocReceived() {
-      return fieldSetFlags()[21];
+      return fieldSetFlags()[25];
     }
 
 
@@ -1610,7 +1881,7 @@ public class FgFaStatusEvent extends org.apache.avro.specific.SpecificRecordBase
       */
     public com.opentext.bn.converters.avro.entity.FgFaStatusEvent.Builder clearNumDocReceived() {
       numDocReceived = null;
-      fieldSetFlags()[21] = false;
+      fieldSetFlags()[25] = false;
       return this;
     }
 
@@ -1628,9 +1899,9 @@ public class FgFaStatusEvent extends org.apache.avro.specific.SpecificRecordBase
       * @return This builder.
       */
     public com.opentext.bn.converters.avro.entity.FgFaStatusEvent.Builder setNumDocReject(java.lang.Integer value) {
-      validate(fields()[22], value);
+      validate(fields()[26], value);
       this.numDocReject = value;
-      fieldSetFlags()[22] = true;
+      fieldSetFlags()[26] = true;
       return this;
     }
 
@@ -1639,7 +1910,7 @@ public class FgFaStatusEvent extends org.apache.avro.specific.SpecificRecordBase
       * @return True if the 'numDocReject' field has been set, false otherwise.
       */
     public boolean hasNumDocReject() {
-      return fieldSetFlags()[22];
+      return fieldSetFlags()[26];
     }
 
 
@@ -1649,7 +1920,7 @@ public class FgFaStatusEvent extends org.apache.avro.specific.SpecificRecordBase
       */
     public com.opentext.bn.converters.avro.entity.FgFaStatusEvent.Builder clearNumDocReject() {
       numDocReject = null;
-      fieldSetFlags()[22] = false;
+      fieldSetFlags()[26] = false;
       return this;
     }
 
@@ -1667,9 +1938,9 @@ public class FgFaStatusEvent extends org.apache.avro.specific.SpecificRecordBase
       * @return This builder.
       */
     public com.opentext.bn.converters.avro.entity.FgFaStatusEvent.Builder setNumOfCycles(java.lang.Integer value) {
-      validate(fields()[23], value);
+      validate(fields()[27], value);
       this.numOfCycles = value;
-      fieldSetFlags()[23] = true;
+      fieldSetFlags()[27] = true;
       return this;
     }
 
@@ -1678,7 +1949,7 @@ public class FgFaStatusEvent extends org.apache.avro.specific.SpecificRecordBase
       * @return True if the 'numOfCycles' field has been set, false otherwise.
       */
     public boolean hasNumOfCycles() {
-      return fieldSetFlags()[23];
+      return fieldSetFlags()[27];
     }
 
 
@@ -1688,7 +1959,7 @@ public class FgFaStatusEvent extends org.apache.avro.specific.SpecificRecordBase
       */
     public com.opentext.bn.converters.avro.entity.FgFaStatusEvent.Builder clearNumOfCycles() {
       numOfCycles = null;
-      fieldSetFlags()[23] = false;
+      fieldSetFlags()[27] = false;
       return this;
     }
 
@@ -1706,9 +1977,9 @@ public class FgFaStatusEvent extends org.apache.avro.specific.SpecificRecordBase
       * @return This builder.
       */
     public com.opentext.bn.converters.avro.entity.FgFaStatusEvent.Builder setNumOfDocs(java.lang.Integer value) {
-      validate(fields()[24], value);
+      validate(fields()[28], value);
       this.numOfDocs = value;
-      fieldSetFlags()[24] = true;
+      fieldSetFlags()[28] = true;
       return this;
     }
 
@@ -1717,7 +1988,7 @@ public class FgFaStatusEvent extends org.apache.avro.specific.SpecificRecordBase
       * @return True if the 'numOfDocs' field has been set, false otherwise.
       */
     public boolean hasNumOfDocs() {
-      return fieldSetFlags()[24];
+      return fieldSetFlags()[28];
     }
 
 
@@ -1727,7 +1998,46 @@ public class FgFaStatusEvent extends org.apache.avro.specific.SpecificRecordBase
       */
     public com.opentext.bn.converters.avro.entity.FgFaStatusEvent.Builder clearNumOfDocs() {
       numOfDocs = null;
-      fieldSetFlags()[24] = false;
+      fieldSetFlags()[28] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'readyToSend' field.
+      * @return The value.
+      */
+    public java.lang.String getReadyToSend() {
+      return readyToSend;
+    }
+
+    /**
+      * Sets the value of the 'readyToSend' field.
+      * @param value The value of 'readyToSend'.
+      * @return This builder.
+      */
+    public com.opentext.bn.converters.avro.entity.FgFaStatusEvent.Builder setReadyToSend(java.lang.String value) {
+      validate(fields()[29], value);
+      this.readyToSend = value;
+      fieldSetFlags()[29] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'readyToSend' field has been set.
+      * @return True if the 'readyToSend' field has been set, false otherwise.
+      */
+    public boolean hasReadyToSend() {
+      return fieldSetFlags()[29];
+    }
+
+
+    /**
+      * Clears the value of the 'readyToSend' field.
+      * @return This builder.
+      */
+    public com.opentext.bn.converters.avro.entity.FgFaStatusEvent.Builder clearReadyToSend() {
+      readyToSend = null;
+      fieldSetFlags()[29] = false;
       return this;
     }
 
@@ -1745,9 +2055,9 @@ public class FgFaStatusEvent extends org.apache.avro.specific.SpecificRecordBase
       * @return This builder.
       */
     public com.opentext.bn.converters.avro.entity.FgFaStatusEvent.Builder setResolvedAckCodes(java.lang.String value) {
-      validate(fields()[25], value);
+      validate(fields()[30], value);
       this.resolvedAckCodes = value;
-      fieldSetFlags()[25] = true;
+      fieldSetFlags()[30] = true;
       return this;
     }
 
@@ -1756,7 +2066,7 @@ public class FgFaStatusEvent extends org.apache.avro.specific.SpecificRecordBase
       * @return True if the 'resolvedAckCodes' field has been set, false otherwise.
       */
     public boolean hasResolvedAckCodes() {
-      return fieldSetFlags()[25];
+      return fieldSetFlags()[30];
     }
 
 
@@ -1766,7 +2076,7 @@ public class FgFaStatusEvent extends org.apache.avro.specific.SpecificRecordBase
       */
     public com.opentext.bn.converters.avro.entity.FgFaStatusEvent.Builder clearResolvedAckCodes() {
       resolvedAckCodes = null;
-      fieldSetFlags()[25] = false;
+      fieldSetFlags()[30] = false;
       return this;
     }
 
@@ -1784,9 +2094,9 @@ public class FgFaStatusEvent extends org.apache.avro.specific.SpecificRecordBase
       * @return This builder.
       */
     public com.opentext.bn.converters.avro.entity.FgFaStatusEvent.Builder setTransactionId(java.lang.String value) {
-      validate(fields()[26], value);
+      validate(fields()[31], value);
       this.transactionId = value;
-      fieldSetFlags()[26] = true;
+      fieldSetFlags()[31] = true;
       return this;
     }
 
@@ -1795,7 +2105,7 @@ public class FgFaStatusEvent extends org.apache.avro.specific.SpecificRecordBase
       * @return True if the 'transactionId' field has been set, false otherwise.
       */
     public boolean hasTransactionId() {
-      return fieldSetFlags()[26];
+      return fieldSetFlags()[31];
     }
 
 
@@ -1805,7 +2115,7 @@ public class FgFaStatusEvent extends org.apache.avro.specific.SpecificRecordBase
       */
     public com.opentext.bn.converters.avro.entity.FgFaStatusEvent.Builder clearTransactionId() {
       transactionId = null;
-      fieldSetFlags()[26] = false;
+      fieldSetFlags()[31] = false;
       return this;
     }
 
@@ -1818,29 +2128,34 @@ public class FgFaStatusEvent extends org.apache.avro.specific.SpecificRecordBase
         record.ackDate = fieldSetFlags()[1] ? this.ackDate : (java.lang.Long) defaultValue(fields()[1]);
         record.ackDocUuid = fieldSetFlags()[2] ? this.ackDocUuid : (java.lang.String) defaultValue(fields()[2]);
         record.calendarRulesetId = fieldSetFlags()[3] ? this.calendarRulesetId : (java.lang.String) defaultValue(fields()[3]);
-        record.cycleExpireDate = fieldSetFlags()[4] ? this.cycleExpireDate : (java.lang.Long) defaultValue(fields()[4]);
-        record.cycleMsg = fieldSetFlags()[5] ? this.cycleMsg : (java.lang.String) defaultValue(fields()[5]);
-        record.cycleMsgDate = fieldSetFlags()[6] ? this.cycleMsgDate : (java.lang.Long) defaultValue(fields()[6]);
-        record.cycleMsgNote = fieldSetFlags()[7] ? this.cycleMsgNote : (java.lang.String) defaultValue(fields()[7]);
-        record.cycleNo = fieldSetFlags()[8] ? this.cycleNo : (java.lang.Integer) defaultValue(fields()[8]);
-        record.dateDelivered = fieldSetFlags()[9] ? this.dateDelivered : (java.lang.Long) defaultValue(fields()[9]);
-        record.delinquentFlag = fieldSetFlags()[10] ? this.delinquentFlag : (java.lang.String) defaultValue(fields()[10]);
-        record.doNotTrackFlag = fieldSetFlags()[11] ? this.doNotTrackFlag : (java.lang.String) defaultValue(fields()[11]);
-        record.faRulesetId = fieldSetFlags()[12] ? this.faRulesetId : (java.lang.String) defaultValue(fields()[12]);
-        record.faStatus = fieldSetFlags()[13] ? this.faStatus : (java.lang.String) defaultValue(fields()[13]);
-        record.faTransactionId = fieldSetFlags()[14] ? this.faTransactionId : (java.lang.String) defaultValue(fields()[14]);
-        record.fgUuid = fieldSetFlags()[15] ? this.fgUuid : (java.lang.String) defaultValue(fields()[15]);
-        record.fileId = fieldSetFlags()[16] ? this.fileId : (java.lang.String) defaultValue(fields()[16]);
-        record.hoursToDelinquent = fieldSetFlags()[17] ? this.hoursToDelinquent : (java.lang.String) defaultValue(fields()[17]);
-        record.icUuid = fieldSetFlags()[18] ? this.icUuid : (java.lang.String) defaultValue(fields()[18]);
-        record.numDocAccepted = fieldSetFlags()[19] ? this.numDocAccepted : (java.lang.Integer) defaultValue(fields()[19]);
-        record.numDocError = fieldSetFlags()[20] ? this.numDocError : (java.lang.Integer) defaultValue(fields()[20]);
-        record.numDocReceived = fieldSetFlags()[21] ? this.numDocReceived : (java.lang.Integer) defaultValue(fields()[21]);
-        record.numDocReject = fieldSetFlags()[22] ? this.numDocReject : (java.lang.Integer) defaultValue(fields()[22]);
-        record.numOfCycles = fieldSetFlags()[23] ? this.numOfCycles : (java.lang.Integer) defaultValue(fields()[23]);
-        record.numOfDocs = fieldSetFlags()[24] ? this.numOfDocs : (java.lang.Integer) defaultValue(fields()[24]);
-        record.resolvedAckCodes = fieldSetFlags()[25] ? this.resolvedAckCodes : (java.lang.String) defaultValue(fields()[25]);
-        record.transactionId = fieldSetFlags()[26] ? this.transactionId : (java.lang.String) defaultValue(fields()[26]);
+        record.createdDate = fieldSetFlags()[4] ? this.createdDate : (java.lang.Long) defaultValue(fields()[4]);
+        record.cycleExpireDate = fieldSetFlags()[5] ? this.cycleExpireDate : (java.lang.Long) defaultValue(fields()[5]);
+        record.cycleMsg = fieldSetFlags()[6] ? this.cycleMsg : (java.lang.String) defaultValue(fields()[6]);
+        record.cycleMsgDate = fieldSetFlags()[7] ? this.cycleMsgDate : (java.lang.Long) defaultValue(fields()[7]);
+        record.cycleMsgNote = fieldSetFlags()[8] ? this.cycleMsgNote : (java.lang.String) defaultValue(fields()[8]);
+        record.cycleNo = fieldSetFlags()[9] ? this.cycleNo : (java.lang.Integer) defaultValue(fields()[9]);
+        record.dateDelivered = fieldSetFlags()[10] ? this.dateDelivered : (java.lang.Long) defaultValue(fields()[10]);
+        record.delinquentFlag = fieldSetFlags()[11] ? this.delinquentFlag : (java.lang.String) defaultValue(fields()[11]);
+        record.doNotTrackFlag = fieldSetFlags()[12] ? this.doNotTrackFlag : (java.lang.String) defaultValue(fields()[12]);
+        record.eventId = fieldSetFlags()[13] ? this.eventId : (java.lang.String) defaultValue(fields()[13]);
+        record.eventTimestamp = fieldSetFlags()[14] ? this.eventTimestamp : (java.lang.Long) defaultValue(fields()[14]);
+        record.faDocTransactionId = fieldSetFlags()[15] ? this.faDocTransactionId : (java.lang.String) defaultValue(fields()[15]);
+        record.faRulesetId = fieldSetFlags()[16] ? this.faRulesetId : (java.lang.String) defaultValue(fields()[16]);
+        record.faStatus = fieldSetFlags()[17] ? this.faStatus : (java.lang.String) defaultValue(fields()[17]);
+        record.fgUuid = fieldSetFlags()[18] ? this.fgUuid : (java.lang.String) defaultValue(fields()[18]);
+        record.fileId = fieldSetFlags()[19] ? this.fileId : (java.lang.String) defaultValue(fields()[19]);
+        record.hoursToDelinquent = fieldSetFlags()[20] ? this.hoursToDelinquent : (java.lang.String) defaultValue(fields()[20]);
+        record.icUuid = fieldSetFlags()[21] ? this.icUuid : (java.lang.String) defaultValue(fields()[21]);
+        record.lastModifiedDate = fieldSetFlags()[22] ? this.lastModifiedDate : (java.lang.Long) defaultValue(fields()[22]);
+        record.numDocAccepted = fieldSetFlags()[23] ? this.numDocAccepted : (java.lang.Integer) defaultValue(fields()[23]);
+        record.numDocError = fieldSetFlags()[24] ? this.numDocError : (java.lang.Integer) defaultValue(fields()[24]);
+        record.numDocReceived = fieldSetFlags()[25] ? this.numDocReceived : (java.lang.Integer) defaultValue(fields()[25]);
+        record.numDocReject = fieldSetFlags()[26] ? this.numDocReject : (java.lang.Integer) defaultValue(fields()[26]);
+        record.numOfCycles = fieldSetFlags()[27] ? this.numOfCycles : (java.lang.Integer) defaultValue(fields()[27]);
+        record.numOfDocs = fieldSetFlags()[28] ? this.numOfDocs : (java.lang.Integer) defaultValue(fields()[28]);
+        record.readyToSend = fieldSetFlags()[29] ? this.readyToSend : (java.lang.String) defaultValue(fields()[29]);
+        record.resolvedAckCodes = fieldSetFlags()[30] ? this.resolvedAckCodes : (java.lang.String) defaultValue(fields()[30]);
+        record.transactionId = fieldSetFlags()[31] ? this.transactionId : (java.lang.String) defaultValue(fields()[31]);
         return record;
       } catch (java.lang.Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
